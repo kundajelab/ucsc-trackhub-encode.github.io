@@ -1,6 +1,6 @@
 track ProCapNet_observed_signal_profile_bigWig
 compositeTrack on
-parent EncodeDLTrack
+parent EncodeBPNetTrack
 shortLabel ProCapNet observe
 longLabel ProCapNet observed signal profile bigWig tracks
 type bigWig

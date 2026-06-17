@@ -1,6 +1,6 @@
 track ChromBPNet_selected_regions_for_predicted_signal_and_sequence_contribution_scores_bigBed
 compositeTrack on
-parent EncodeDLTrack
+parent EncodeBPNetTrack
 shortLabel ChromBPNet select
 longLabel ChromBPNet selected regions for predicted signal and sequence contribution scores bigBed tracks
 type bigBed 6

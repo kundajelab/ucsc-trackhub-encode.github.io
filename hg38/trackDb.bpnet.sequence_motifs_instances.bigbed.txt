@@ -1,6 +1,6 @@
 track BPNet_sequence_motifs_instances_bigBed
 compositeTrack on
-parent EncodeDLTrack
+parent EncodeBPNetTrack
 shortLabel BPNet sequence mo
 longLabel BPNet sequence motifs instances bigBed tracks
 type bigBed 6

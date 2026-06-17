@@ -1,6 +1,6 @@
 track ProCapNet_sequence_contribution_scores_bigWig
 compositeTrack on
-parent EncodeDLTrack
+parent EncodeBPNetTrack
 shortLabel ProCapNet sequenc
 longLabel ProCapNet sequence contribution scores bigWig tracks
 type bigWig

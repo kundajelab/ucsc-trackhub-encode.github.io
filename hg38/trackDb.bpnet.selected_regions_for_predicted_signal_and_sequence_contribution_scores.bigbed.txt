@@ -1,6 +1,6 @@
 track BPNet_selected_regions_for_predicted_signal_and_sequence_contribution_scores_bigBed
 compositeTrack on
-parent EncodeDLTrack
+parent EncodeBPNetTrack
 shortLabel BPNet selected re
 longLabel BPNet selected regions for predicted signal and sequence contribution scores bigBed tracks
 type bigBed 6

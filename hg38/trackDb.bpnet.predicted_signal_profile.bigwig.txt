@@ -1,6 +1,6 @@
 track BPNet_predicted_signal_profile_bigWig
 compositeTrack on
-parent EncodeDLTrack
+parent EncodeBPNetTrack
 shortLabel BPNet predicted s
 longLabel BPNet predicted signal profile bigWig tracks
 type bigWig

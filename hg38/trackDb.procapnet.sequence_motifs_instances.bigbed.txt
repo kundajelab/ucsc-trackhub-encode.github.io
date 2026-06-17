@@ -1,6 +1,6 @@
 track ProCapNet_sequence_motifs_instances_bigBed
 compositeTrack on
-parent EncodeDLTrack
+parent EncodeBPNetTrack
 shortLabel ProCapNet sequenc
 longLabel ProCapNet sequence motifs instances bigBed tracks
 type bigBed 6

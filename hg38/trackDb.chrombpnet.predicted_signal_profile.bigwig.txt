@@ -1,6 +1,6 @@
 track ChromBPNet_predicted_signal_profile_bigWig
 compositeTrack on
-parent EncodeDLTrack
+parent EncodeBPNetTrack
 shortLabel ChromBPNet predic
 longLabel ChromBPNet predicted signal profile bigWig tracks
 type bigWig
