@@ -1,7 +1,7 @@
 track EncodeBPNetTrack
 superTrack on show
-shortLabel ENCODE BPNet models
-longLabel ENCODE deep learning sequence models: BPNet, ChromBPNet, ProCapNet, ReporterNet
+shortLabel ENCODE BPNet (TF ChIP)
+longLabel ENCODE BPNet models trained on TF ChIP-seq: Model predictions, contribution scores, motif instance tracks.
 
 include trackDb.bpnet.normalized_observed_signal_profile.bigwig.txt
 include trackDb.bpnet.normalized_predicted_signal_profile.bigwig.txt
@@ -10,6 +10,12 @@ include trackDb.bpnet.predicted_signal_profile.bigwig.txt
 include trackDb.bpnet.selected_regions_for_predicted_signal_and_sequence_contribution_scores.bigbed.txt
 include trackDb.bpnet.sequence_contribution_scores.bigwig.txt
 include trackDb.bpnet.sequence_motifs_instances.bigbed.txt
+
+track EncodeChromBPNetTrack
+superTrack on show
+shortLabel ENCODE ChromBPNet (DNase/ATAC)
+longLabel ENCODE ChromBPNet models trained on DNase-seq/ATAC-seq: Model predictions, contribution scores, motif instance tracks.
+
 include trackDb.chrombpnet.bias_corrected_predicted_signal_profile.bigwig.txt
 include trackDb.chrombpnet.normalized_bias_corrected_predicted_signal_profile.bigwig.txt
 include trackDb.chrombpnet.normalized_observed_signal_profile.bigwig.txt
@@ -19,6 +25,12 @@ include trackDb.chrombpnet.predicted_signal_profile.bigwig.txt
 include trackDb.chrombpnet.selected_regions_for_predicted_signal_and_sequence_contribution_scores.bigbed.txt
 include trackDb.chrombpnet.sequence_contribution_scores.bigwig.txt
 include trackDb.chrombpnet.sequence_motifs_instances.bigbed.txt
+
+track EncodeProCapNetTrack
+superTrack on show
+shortLabel ENCODE ProCapNet (PRO-cap)
+longLabel ENCODE ProCapNet models trained on PRO-cap: Model predictions, contribution scores, motif instance tracks.
+
 include trackDb.procapnet.observed_signal_profile.bigwig.txt
 include trackDb.procapnet.predicted_signal_profile.bigwig.txt
 include trackDb.procapnet.sequence_contribution_scores.bigwig.txt

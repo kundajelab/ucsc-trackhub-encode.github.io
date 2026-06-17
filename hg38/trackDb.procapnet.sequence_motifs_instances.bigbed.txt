@@ -1,7 +1,7 @@
 track ProCapNet_sequence_motifs_instances_bigBed
 compositeTrack on
-parent EncodeBPNetTrack
-shortLabel ProCapNet sequenc
+parent EncodeProCapNetTrack
+shortLabel Motif instances
 longLabel ProCapNet sequence motifs instances bigBed tracks
 type bigBed 6
 visibility hide

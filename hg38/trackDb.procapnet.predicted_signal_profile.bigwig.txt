@@ -1,7 +1,7 @@
 track ProCapNet_predicted_signal_profile_bigWig
 compositeTrack on
-parent EncodeBPNetTrack
-shortLabel ProCapNet predict
+parent EncodeProCapNetTrack
+shortLabel Predicted signal
 longLabel ProCapNet predicted signal profile bigWig tracks
 type bigWig
 visibility hide

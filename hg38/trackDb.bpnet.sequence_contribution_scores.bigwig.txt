@@ -1,7 +1,7 @@
 track BPNet_sequence_contribution_scores_bigWig
 compositeTrack on
 parent EncodeBPNetTrack
-shortLabel BPNet sequence co
+shortLabel Contribution scores
 longLabel BPNet sequence contribution scores bigWig tracks
 type bigWig
 visibility hide

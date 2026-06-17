@@ -1,7 +1,7 @@
 track ChromBPNet_observed_signal_profile_bigWig
 compositeTrack on
-parent EncodeBPNetTrack
-shortLabel ChromBPNet observ
+parent EncodeChromBPNetTrack
+shortLabel Observed signal
 longLabel ChromBPNet observed signal profile bigWig tracks
 type bigWig
 visibility hide

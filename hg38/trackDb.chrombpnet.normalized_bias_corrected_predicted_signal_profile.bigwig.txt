@@ -1,7 +1,7 @@
 track ChromBPNet_normalized_bias_corrected_predicted_signal_profile_bigWig
 compositeTrack on
-parent EncodeBPNetTrack
-shortLabel ChromBPNet normal
+parent EncodeChromBPNetTrack
+shortLabel (Norm) bias-corrected predicted signal
 longLabel ChromBPNet normalized bias-corrected predicted signal profile bigWig tracks
 type bigWig
 visibility hide

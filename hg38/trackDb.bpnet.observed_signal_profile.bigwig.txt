@@ -1,7 +1,7 @@
 track BPNet_observed_signal_profile_bigWig
 compositeTrack on
 parent EncodeBPNetTrack
-shortLabel BPNet observed si
+shortLabel Observed signal
 longLabel BPNet observed signal profile bigWig tracks
 type bigWig
 visibility hide

@@ -1,7 +1,7 @@
 track ChromBPNet_sequence_motifs_instances_bigBed
 compositeTrack on
-parent EncodeBPNetTrack
-shortLabel ChromBPNet sequen
+parent EncodeChromBPNetTrack
+shortLabel Motif instances
 longLabel ChromBPNet sequence motifs instances bigBed tracks
 type bigBed 6
 visibility hide

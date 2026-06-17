@@ -1,7 +1,7 @@
 track ChromBPNet_sequence_contribution_scores_bigWig
 compositeTrack on
-parent EncodeBPNetTrack
-shortLabel ChromBPNet sequen
+parent EncodeChromBPNetTrack
+shortLabel Contribution scores
 longLabel ChromBPNet sequence contribution scores bigWig tracks
 type bigWig
 visibility hide

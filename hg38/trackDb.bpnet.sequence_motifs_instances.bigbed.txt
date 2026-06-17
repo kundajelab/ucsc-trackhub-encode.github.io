@@ -1,7 +1,7 @@
 track BPNet_sequence_motifs_instances_bigBed
 compositeTrack on
 parent EncodeBPNetTrack
-shortLabel BPNet sequence mo
+shortLabel Motif instances
 longLabel BPNet sequence motifs instances bigBed tracks
 type bigBed 6
 visibility hide
