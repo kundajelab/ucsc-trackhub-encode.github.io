@@ -1,5 +1,5 @@
-hub EncodeDLHub
-shortLabel ENCODE DL
-longLabel A collection of model predictions, contribution scores, and motif instances from ENCODE deep learning sequence models: BPNet, ChromBPNet, ProCapNet, ReporterNet
+hub EncodeBPNetHub
+shortLabel ENCODE BPNet models
+longLabel A collection of deep learning model predictions, contribution scores, and motif instances from ENCODE: BPNet, ChromBPNet, ProCapNet, ReporterNet.
 genomesFile genomes.txt
 email akundaje@stanford.edu

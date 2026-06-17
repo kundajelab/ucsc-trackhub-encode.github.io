@@ -1,6 +1,6 @@
-track EncodeDLTrack
+track EncodeBPNetTrack
 superTrack on show
-shortLabel ENCODE DL
+shortLabel ENCODE BPNet models
 longLabel ENCODE deep learning sequence models: BPNet, ChromBPNet, ProCapNet, ReporterNet
 
 include trackDb.bpnet.normalized_observed_signal_profile.bigwig.txt
