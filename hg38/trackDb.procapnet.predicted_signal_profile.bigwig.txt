@@ -1,0 +1,153 @@
+track ProCapNet_predicted_signal_profile_bigWig
+compositeTrack on
+parent EncodeDLTrack
+shortLabel ProCapNet predict
+longLabel ProCapNet predicted signal profile bigWig tracks
+type bigWig
+visibility hide
+allButtonPair on
+dragAndDrop subTracks
+subGroup1 model Model ProCapNet=ProCapNet
+subGroup2 track Track predicted_signal_profile=predicted_signal_profile
+subGroup3 assay Assay PRO_cap=PRO-cap
+subGroup4 tissue Tissue cell_line=cell-line endothelial=endothelial
+subGroup5 organ Organ blood_vessel=blood-vessel cell_line=cell-line
+subGroup6 system System cell_line=cell-line circulatory_system=circulatory-system
+subGroup7 biosample Biosample A673=A673 Caco_2=Caco-2 Calu3=Calu3 K562=K562 MCF_10A=MCF-10A endothelial_cell_of_umbilical_vein=endothelial-cell-of-umbilical-vein
+subGroup8 output Output Minus=Minus Plus=Plus
+subGroup9 target Target unknown=unknown
+dimensions dimX=target dimY=biosample dimA=model dimB=assay
+filterComposite dimA dimB
+sortOrder model=+ assay=+ tissue=+ organ=+ system=+ biosample=+ output=+ target=+
+
+track ProCapNet_predicted_signal_profile_Minus_ENCFF568EMG
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF568EMG/@@download/ENCFF568EMG.bigWig
+shortLabel unknown A673 Minu
+longLabel ProCapNet predicted signal profile Minus unknown A673 PRO-cap ENCFF568EMG
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=Minus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Plus_ENCFF245QOS
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF245QOS/@@download/ENCFF245QOS.bigWig
+shortLabel unknown A673 Plus
+longLabel ProCapNet predicted signal profile Plus unknown A673 PRO-cap ENCFF245QOS
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=Plus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Minus_ENCFF512NRZ
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF512NRZ/@@download/ENCFF512NRZ.bigWig
+shortLabel unknown Caco-2 Mi
+longLabel ProCapNet predicted signal profile Minus unknown Caco-2 PRO-cap ENCFF512NRZ
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=Minus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Plus_ENCFF781NNR
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF781NNR/@@download/ENCFF781NNR.bigWig
+shortLabel unknown Caco-2 Pl
+longLabel ProCapNet predicted signal profile Plus unknown Caco-2 PRO-cap ENCFF781NNR
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=Plus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Minus_ENCFF726MZN
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF726MZN/@@download/ENCFF726MZN.bigWig
+shortLabel unknown Calu3 Min
+longLabel ProCapNet predicted signal profile Minus unknown Calu3 PRO-cap ENCFF726MZN
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=Minus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Plus_ENCFF297DYW
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF297DYW/@@download/ENCFF297DYW.bigWig
+shortLabel unknown Calu3 Plu
+longLabel ProCapNet predicted signal profile Plus unknown Calu3 PRO-cap ENCFF297DYW
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=Plus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Minus_ENCFF977ZRF
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF977ZRF/@@download/ENCFF977ZRF.bigWig
+shortLabel unknown K562 Minu
+longLabel ProCapNet predicted signal profile Minus unknown K562 PRO-cap ENCFF977ZRF
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=Minus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Plus_ENCFF810TSX
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF810TSX/@@download/ENCFF810TSX.bigWig
+shortLabel unknown K562 Plus
+longLabel ProCapNet predicted signal profile Plus unknown K562 PRO-cap ENCFF810TSX
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=Plus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Minus_ENCFF751HYG
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF751HYG/@@download/ENCFF751HYG.bigWig
+shortLabel unknown MCF-10A M
+longLabel ProCapNet predicted signal profile Minus unknown MCF-10A PRO-cap ENCFF751HYG
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=Minus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Plus_ENCFF413SKO
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF413SKO/@@download/ENCFF413SKO.bigWig
+shortLabel unknown MCF-10A P
+longLabel ProCapNet predicted signal profile Plus unknown MCF-10A PRO-cap ENCFF413SKO
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=Plus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Minus_ENCFF130FIR
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF130FIR/@@download/ENCFF130FIR.bigWig
+shortLabel unknown endotheli
+longLabel ProCapNet predicted signal profile Minus unknown endothelial-cell-of-umbilical-vein PRO-cap ENCFF130FIR
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=Minus target=unknown
+visibility full
+color 0,90,180
+autoScale on
+
+track ProCapNet_predicted_signal_profile_Plus_ENCFF522DPN
+parent ProCapNet_predicted_signal_profile_bigWig off
+type bigWig
+bigDataUrl https://www.encodeproject.org/files/ENCFF522DPN/@@download/ENCFF522DPN.bigWig
+shortLabel unknown endotheli
+longLabel ProCapNet predicted signal profile Plus unknown endothelial-cell-of-umbilical-vein PRO-cap ENCFF522DPN
+subGroups model=ProCapNet track=predicted_signal_profile assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=Plus target=unknown
+visibility full
+color 0,90,180
+autoScale on

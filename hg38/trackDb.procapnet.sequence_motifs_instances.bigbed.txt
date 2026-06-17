@@ -1,0 +1,81 @@
+track ProCapNet_sequence_motifs_instances_bigBed
+compositeTrack on
+parent EncodeDLTrack
+shortLabel ProCapNet sequenc
+longLabel ProCapNet sequence motifs instances bigBed tracks
+type bigBed 6
+visibility hide
+allButtonPair on
+dragAndDrop subTracks
+subGroup1 model Model ProCapNet=ProCapNet
+subGroup2 track Track sequence_motifs_instances=sequence_motifs_instances
+subGroup3 assay Assay PRO_cap=PRO-cap
+subGroup4 tissue Tissue cell_line=cell-line endothelial=endothelial
+subGroup5 organ Organ blood_vessel=blood-vessel cell_line=cell-line
+subGroup6 system System cell_line=cell-line circulatory_system=circulatory-system
+subGroup7 biosample Biosample A673=A673 Caco_2=Caco-2 Calu3=Calu3 K562=K562 MCF_10A=MCF-10A endothelial_cell_of_umbilical_vein=endothelial-cell-of-umbilical-vein
+subGroup8 output Output NA=NA
+subGroup9 target Target unknown=unknown
+dimensions dimX=target dimY=biosample dimA=model dimB=assay
+filterComposite dimA dimB
+sortOrder model=+ assay=+ tissue=+ organ=+ system=+ biosample=+ output=+ target=+
+
+track ProCapNet_sequence_motifs_instances_NA_ENCFF890XJG
+parent ProCapNet_sequence_motifs_instances_bigBed off
+type bigBed 6
+bigDataUrl https://www.encodeproject.org/files/ENCFF890XJG/@@download/ENCFF890XJG.bigBed
+shortLabel unknown A673 NA
+longLabel ProCapNet sequence motifs instances NA unknown A673 PRO-cap ENCFF890XJG
+subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=NA target=unknown
+visibility dense
+color 180,60,0
+
+track ProCapNet_sequence_motifs_instances_NA_ENCFF214LNU
+parent ProCapNet_sequence_motifs_instances_bigBed off
+type bigBed 6
+bigDataUrl https://www.encodeproject.org/files/ENCFF214LNU/@@download/ENCFF214LNU.bigBed
+shortLabel unknown Caco-2 NA
+longLabel ProCapNet sequence motifs instances NA unknown Caco-2 PRO-cap ENCFF214LNU
+subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=NA target=unknown
+visibility dense
+color 180,60,0
+
+track ProCapNet_sequence_motifs_instances_NA_ENCFF351WJS
+parent ProCapNet_sequence_motifs_instances_bigBed off
+type bigBed 6
+bigDataUrl https://www.encodeproject.org/files/ENCFF351WJS/@@download/ENCFF351WJS.bigBed
+shortLabel unknown Calu3 NA
+longLabel ProCapNet sequence motifs instances NA unknown Calu3 PRO-cap ENCFF351WJS
+subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=NA target=unknown
+visibility dense
+color 180,60,0
+
+track ProCapNet_sequence_motifs_instances_NA_ENCFF624OCH
+parent ProCapNet_sequence_motifs_instances_bigBed off
+type bigBed 6
+bigDataUrl https://www.encodeproject.org/files/ENCFF624OCH/@@download/ENCFF624OCH.bigBed
+shortLabel unknown K562 NA
+longLabel ProCapNet sequence motifs instances NA unknown K562 PRO-cap ENCFF624OCH
+subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=NA target=unknown
+visibility dense
+color 180,60,0
+
+track ProCapNet_sequence_motifs_instances_NA_ENCFF264QWB
+parent ProCapNet_sequence_motifs_instances_bigBed off
+type bigBed 6
+bigDataUrl https://www.encodeproject.org/files/ENCFF264QWB/@@download/ENCFF264QWB.bigBed
+shortLabel unknown MCF-10A N
+longLabel ProCapNet sequence motifs instances NA unknown MCF-10A PRO-cap ENCFF264QWB
+subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=NA target=unknown
+visibility dense
+color 180,60,0
+
+track ProCapNet_sequence_motifs_instances_NA_ENCFF479KIM
+parent ProCapNet_sequence_motifs_instances_bigBed off
+type bigBed 6
+bigDataUrl https://www.encodeproject.org/files/ENCFF479KIM/@@download/ENCFF479KIM.bigBed
+shortLabel unknown endotheli
+longLabel ProCapNet sequence motifs instances NA unknown endothelial-cell-of-umbilical-vein PRO-cap ENCFF479KIM
+subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=NA target=unknown
+visibility dense
+color 180,60,0
