@@ -9,16 +9,18 @@ allButtonPair on
 dragAndDrop subTracks
 subGroup1 model Model ProCapNet=ProCapNet
 subGroup2 track Track sequence_motifs_instances=sequence_motifs_instances
-subGroup3 assay Assay PRO_cap=PRO-cap
-subGroup4 tissue Tissue cell_line=cell-line endothelial=endothelial
-subGroup5 organ Organ blood_vessel=blood-vessel cell_line=cell-line
-subGroup6 system System cell_line=cell-line circulatory_system=circulatory-system
-subGroup7 biosample Biosample A673=A673 Caco_2=Caco-2 Calu3=Calu3 K562=K562 MCF_10A=MCF-10A endothelial_cell_of_umbilical_vein=endothelial-cell-of-umbilical-vein
-subGroup8 output Output NA=NA
-subGroup9 target Target unknown=unknown
+subGroup3 experiment Experiment_ID ENCSR046BCI=ENCSR046BCI ENCSR098LLB=ENCSR098LLB ENCSR100LIJ=ENCSR100LIJ ENCSR261KBX=ENCSR261KBX ENCSR799DGV=ENCSR799DGV ENCSR935RNW=ENCSR935RNW
+subGroup4 model_id Model_ID ENCSR072YCM=ENCSR072YCM ENCSR182QNJ=ENCSR182QNJ ENCSR740IPL=ENCSR740IPL ENCSR797DEF=ENCSR797DEF ENCSR801ECP=ENCSR801ECP ENCSR860TYZ=ENCSR860TYZ
+subGroup5 assay Assay PRO_cap=PRO-cap
+subGroup6 tissue Tissue cell_line=cell-line endothelial=endothelial
+subGroup7 organ Organ blood_vessel=blood-vessel cell_line=cell-line
+subGroup8 system System cell_line=cell-line circulatory_system=circulatory-system
+subGroup9 biosample Biosample A673=A673 Caco_2=Caco-2 Calu3=Calu3 K562=K562 MCF_10A=MCF-10A endothelial_cell_of_umbilical_vein=endothelial-cell-of-umbilical-vein
+subGroup10 output Output NA=NA
+subGroup11 target Target unknown=unknown
 dimensions dimX=target dimY=biosample dimA=model dimB=assay
 filterComposite dimA dimB
-sortOrder model=+ assay=+ tissue=+ organ=+ system=+ biosample=+ output=+ target=+
+sortOrder model=+ track=+ experiment=+ model_id=+ assay=+ tissue=+ organ=+ system=+ biosample=+ output=+ target=+
 
 track ProCapNet_sequence_motifs_instances_NA_ENCFF890XJG
 parent ProCapNet_sequence_motifs_instances_bigBed off
@@ -26,7 +28,7 @@ type bigBed 6
 bigDataUrl https://www.encodeproject.org/files/ENCFF890XJG/@@download/ENCFF890XJG.bigBed
 shortLabel unknown A673 NA
 longLabel ProCapNet sequence motifs instances NA unknown A673 PRO-cap ENCFF890XJG
-subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=NA target=unknown
+subGroups model=ProCapNet track=sequence_motifs_instances experiment=ENCSR046BCI model_id=ENCSR072YCM assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=NA target=unknown
 visibility dense
 color 180,60,0
 
@@ -36,7 +38,7 @@ type bigBed 6
 bigDataUrl https://www.encodeproject.org/files/ENCFF214LNU/@@download/ENCFF214LNU.bigBed
 shortLabel unknown Caco-2 NA
 longLabel ProCapNet sequence motifs instances NA unknown Caco-2 PRO-cap ENCFF214LNU
-subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=NA target=unknown
+subGroups model=ProCapNet track=sequence_motifs_instances experiment=ENCSR100LIJ model_id=ENCSR182QNJ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=NA target=unknown
 visibility dense
 color 180,60,0
 
@@ -46,7 +48,7 @@ type bigBed 6
 bigDataUrl https://www.encodeproject.org/files/ENCFF351WJS/@@download/ENCFF351WJS.bigBed
 shortLabel unknown Calu3 NA
 longLabel ProCapNet sequence motifs instances NA unknown Calu3 PRO-cap ENCFF351WJS
-subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=NA target=unknown
+subGroups model=ProCapNet track=sequence_motifs_instances experiment=ENCSR935RNW model_id=ENCSR797DEF assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=NA target=unknown
 visibility dense
 color 180,60,0
 
@@ -56,7 +58,7 @@ type bigBed 6
 bigDataUrl https://www.encodeproject.org/files/ENCFF624OCH/@@download/ENCFF624OCH.bigBed
 shortLabel unknown K562 NA
 longLabel ProCapNet sequence motifs instances NA unknown K562 PRO-cap ENCFF624OCH
-subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=NA target=unknown
+subGroups model=ProCapNet track=sequence_motifs_instances experiment=ENCSR261KBX model_id=ENCSR740IPL assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=NA target=unknown
 visibility dense
 color 180,60,0
 
@@ -66,7 +68,7 @@ type bigBed 6
 bigDataUrl https://www.encodeproject.org/files/ENCFF264QWB/@@download/ENCFF264QWB.bigBed
 shortLabel unknown MCF-10A N
 longLabel ProCapNet sequence motifs instances NA unknown MCF-10A PRO-cap ENCFF264QWB
-subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=NA target=unknown
+subGroups model=ProCapNet track=sequence_motifs_instances experiment=ENCSR799DGV model_id=ENCSR860TYZ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=NA target=unknown
 visibility dense
 color 180,60,0
 
@@ -76,6 +78,6 @@ type bigBed 6
 bigDataUrl https://www.encodeproject.org/files/ENCFF479KIM/@@download/ENCFF479KIM.bigBed
 shortLabel unknown endotheli
 longLabel ProCapNet sequence motifs instances NA unknown endothelial-cell-of-umbilical-vein PRO-cap ENCFF479KIM
-subGroups model=ProCapNet track=sequence_motifs_instances assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=NA target=unknown
+subGroups model=ProCapNet track=sequence_motifs_instances experiment=ENCSR098LLB model_id=ENCSR801ECP assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=NA target=unknown
 visibility dense
 color 180,60,0

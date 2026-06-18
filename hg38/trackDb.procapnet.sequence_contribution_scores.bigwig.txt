@@ -9,16 +9,18 @@ allButtonPair on
 dragAndDrop subTracks
 subGroup1 model Model ProCapNet=ProCapNet
 subGroup2 track Track sequence_contribution_scores=sequence_contribution_scores
-subGroup3 assay Assay PRO_cap=PRO-cap
-subGroup4 tissue Tissue cell_line=cell-line endothelial=endothelial
-subGroup5 organ Organ blood_vessel=blood-vessel cell_line=cell-line
-subGroup6 system System cell_line=cell-line circulatory_system=circulatory-system
-subGroup7 biosample Biosample A673=A673 Caco_2=Caco-2 Calu3=Calu3 K562=K562 MCF_10A=MCF-10A endothelial_cell_of_umbilical_vein=endothelial-cell-of-umbilical-vein
-subGroup8 output Output Counts=Counts Profile=Profile
-subGroup9 target Target unknown=unknown
+subGroup3 experiment Experiment_ID ENCSR046BCI=ENCSR046BCI ENCSR098LLB=ENCSR098LLB ENCSR100LIJ=ENCSR100LIJ ENCSR261KBX=ENCSR261KBX ENCSR799DGV=ENCSR799DGV ENCSR935RNW=ENCSR935RNW
+subGroup4 model_id Model_ID ENCSR072YCM=ENCSR072YCM ENCSR182QNJ=ENCSR182QNJ ENCSR740IPL=ENCSR740IPL ENCSR797DEF=ENCSR797DEF ENCSR801ECP=ENCSR801ECP ENCSR860TYZ=ENCSR860TYZ
+subGroup5 assay Assay PRO_cap=PRO-cap
+subGroup6 tissue Tissue cell_line=cell-line endothelial=endothelial
+subGroup7 organ Organ blood_vessel=blood-vessel cell_line=cell-line
+subGroup8 system System cell_line=cell-line circulatory_system=circulatory-system
+subGroup9 biosample Biosample A673=A673 Caco_2=Caco-2 Calu3=Calu3 K562=K562 MCF_10A=MCF-10A endothelial_cell_of_umbilical_vein=endothelial-cell-of-umbilical-vein
+subGroup10 output Output Counts=Counts Profile=Profile
+subGroup11 target Target unknown=unknown
 dimensions dimX=target dimY=biosample dimA=model dimB=assay
 filterComposite dimA dimB
-sortOrder model=+ assay=+ tissue=+ organ=+ system=+ biosample=+ output=+ target=+
+sortOrder model=+ track=+ experiment=+ model_id=+ assay=+ tissue=+ organ=+ system=+ biosample=+ output=+ target=+
 
 track ProCapNet_sequence_contribution_scores_Counts_ENCFF496KXS
 parent ProCapNet_sequence_contribution_scores_bigWig off
@@ -26,7 +28,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF496KXS/@@download/ENCFF496KXS.bigWig
 shortLabel unknown A673 Coun
 longLabel ProCapNet sequence contribution scores Counts unknown A673 PRO-cap ENCFF496KXS
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=Counts target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR046BCI model_id=ENCSR072YCM assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=Counts target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -37,7 +39,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF395XCX/@@download/ENCFF395XCX.bigWig
 shortLabel unknown A673 Prof
 longLabel ProCapNet sequence contribution scores Profile unknown A673 PRO-cap ENCFF395XCX
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=Profile target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR046BCI model_id=ENCSR072YCM assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=Profile target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -48,7 +50,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF773CZW/@@download/ENCFF773CZW.bigWig
 shortLabel unknown Caco-2 Co
 longLabel ProCapNet sequence contribution scores Counts unknown Caco-2 PRO-cap ENCFF773CZW
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=Counts target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR100LIJ model_id=ENCSR182QNJ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=Counts target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -59,7 +61,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF566GOV/@@download/ENCFF566GOV.bigWig
 shortLabel unknown Caco-2 Pr
 longLabel ProCapNet sequence contribution scores Profile unknown Caco-2 PRO-cap ENCFF566GOV
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=Profile target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR100LIJ model_id=ENCSR182QNJ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=Profile target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -70,7 +72,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF255ZJK/@@download/ENCFF255ZJK.bigWig
 shortLabel unknown Calu3 Cou
 longLabel ProCapNet sequence contribution scores Counts unknown Calu3 PRO-cap ENCFF255ZJK
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=Counts target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR935RNW model_id=ENCSR797DEF assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=Counts target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -81,7 +83,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF369BLK/@@download/ENCFF369BLK.bigWig
 shortLabel unknown Calu3 Pro
 longLabel ProCapNet sequence contribution scores Profile unknown Calu3 PRO-cap ENCFF369BLK
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=Profile target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR935RNW model_id=ENCSR797DEF assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=Profile target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -92,7 +94,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF399XSL/@@download/ENCFF399XSL.bigWig
 shortLabel unknown K562 Coun
 longLabel ProCapNet sequence contribution scores Counts unknown K562 PRO-cap ENCFF399XSL
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=Counts target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR261KBX model_id=ENCSR740IPL assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=Counts target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -103,7 +105,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF105JTF/@@download/ENCFF105JTF.bigWig
 shortLabel unknown K562 Prof
 longLabel ProCapNet sequence contribution scores Profile unknown K562 PRO-cap ENCFF105JTF
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=Profile target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR261KBX model_id=ENCSR740IPL assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=Profile target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -114,7 +116,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF898JHY/@@download/ENCFF898JHY.bigWig
 shortLabel unknown MCF-10A C
 longLabel ProCapNet sequence contribution scores Counts unknown MCF-10A PRO-cap ENCFF898JHY
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=Counts target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR799DGV model_id=ENCSR860TYZ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=Counts target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -125,7 +127,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF117LHD/@@download/ENCFF117LHD.bigWig
 shortLabel unknown MCF-10A P
 longLabel ProCapNet sequence contribution scores Profile unknown MCF-10A PRO-cap ENCFF117LHD
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=Profile target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR799DGV model_id=ENCSR860TYZ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=Profile target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -136,7 +138,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF142HSZ/@@download/ENCFF142HSZ.bigWig
 shortLabel unknown endotheli
 longLabel ProCapNet sequence contribution scores Counts unknown endothelial-cell-of-umbilical-vein PRO-cap ENCFF142HSZ
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=Counts target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR098LLB model_id=ENCSR801ECP assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=Counts target=unknown
 visibility full
 color 0,90,180
 autoScale on
@@ -147,7 +149,7 @@ type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF090ECF/@@download/ENCFF090ECF.bigWig
 shortLabel unknown endotheli
 longLabel ProCapNet sequence contribution scores Profile unknown endothelial-cell-of-umbilical-vein PRO-cap ENCFF090ECF
-subGroups model=ProCapNet track=sequence_contribution_scores assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=Profile target=unknown
+subGroups model=ProCapNet track=sequence_contribution_scores experiment=ENCSR098LLB model_id=ENCSR801ECP assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=Profile target=unknown
 visibility full
 color 0,90,180
 autoScale on
