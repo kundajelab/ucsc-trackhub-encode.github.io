@@ -8,7 +8,8 @@ include trackDb.bpnet.normalized_predicted_signal_profile.bigwig.txt
 include trackDb.bpnet.observed_signal_profile.bigwig.txt
 include trackDb.bpnet.predicted_signal_profile.bigwig.txt
 include trackDb.bpnet.selected_regions_for_predicted_signal_and_sequence_contribution_scores.bigbed.txt
-include trackDb.bpnet.sequence_contribution_scores.bigwig.txt
+include trackDb.bpnet.sequence_contribution_scores_counts.bigwig.txt
+include trackDb.bpnet.sequence_contribution_scores_profile.bigwig.txt
 include trackDb.bpnet.sequence_motifs_instances.bigbed.txt
 
 track EncodeChromBPNetTrack
@@ -23,7 +24,8 @@ include trackDb.chrombpnet.normalized_predicted_signal_profile.bigwig.txt
 include trackDb.chrombpnet.observed_signal_profile.bigwig.txt
 include trackDb.chrombpnet.predicted_signal_profile.bigwig.txt
 include trackDb.chrombpnet.selected_regions_for_predicted_signal_and_sequence_contribution_scores.bigbed.txt
-include trackDb.chrombpnet.sequence_contribution_scores.bigwig.txt
+include trackDb.chrombpnet.sequence_contribution_scores_counts.bigwig.txt
+include trackDb.chrombpnet.sequence_contribution_scores_profile.bigwig.txt
 include trackDb.chrombpnet.sequence_motifs_instances.bigbed.txt
 
 track EncodeProCapNetTrack
@@ -33,5 +35,6 @@ longLabel ENCODE ProCapNet models trained on PRO-cap: Model predictions, contrib
 
 include trackDb.procapnet.observed_signal_profile.bigwig.txt
 include trackDb.procapnet.predicted_signal_profile.bigwig.txt
-include trackDb.procapnet.sequence_contribution_scores.bigwig.txt
+include trackDb.procapnet.sequence_contribution_scores_counts.bigwig.txt
+include trackDb.procapnet.sequence_contribution_scores_profile.bigwig.txt
 include trackDb.procapnet.sequence_motifs_instances.bigbed.txt
