@@ -1,0 +1,13 @@
+track_key	file_accession	experiment	model_accession	model	track_type	format	assay	target	biosample	tissue	organ	system	strand	score_type	qc_flag
+ENCFF248NRG	ENCFF248NRG	ENCSR046BCI	ENCSR072YCM	ProCapNet	observed signal profile	bigWig	PRO-cap	none	A673	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF484JMU	ENCFF484JMU	ENCSR046BCI	ENCSR072YCM	ProCapNet	observed signal profile	bigWig	PRO-cap	none	A673	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF674WYH	ENCFF674WYH	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	observed signal profile	bigWig	PRO-cap	none	Caco-2	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF290ILU	ENCFF290ILU	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	observed signal profile	bigWig	PRO-cap	none	Caco-2	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF694ACJ	ENCFF694ACJ	ENCSR935RNW	ENCSR797DEF	ProCapNet	observed signal profile	bigWig	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF726ZFO	ENCFF726ZFO	ENCSR935RNW	ENCSR797DEF	ProCapNet	observed signal profile	bigWig	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF662SHP	ENCFF662SHP	ENCSR261KBX	ENCSR740IPL	ProCapNet	observed signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF798GNW	ENCFF798GNW	ENCSR261KBX	ENCSR740IPL	ProCapNet	observed signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF466PYB	ENCFF466PYB	ENCSR799DGV	ENCSR860TYZ	ProCapNet	observed signal profile	bigWig	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF460DXE	ENCFF460DXE	ENCSR799DGV	ENCSR860TYZ	ProCapNet	observed signal profile	bigWig	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF932EJP	ENCFF932EJP	ENCSR098LLB	ENCSR801ECP	ProCapNet	observed signal profile	bigWig	PRO-cap	none	endothelial-cell-of-umbilical-vein	endothelial	blood-vessel	circulatory-system	minus	none	passed
+ENCFF515GWR	ENCFF515GWR	ENCSR098LLB	ENCSR801ECP	ProCapNet	observed signal profile	bigWig	PRO-cap	none	endothelial-cell-of-umbilical-vein	endothelial	blood-vessel	circulatory-system	plus	none	passed

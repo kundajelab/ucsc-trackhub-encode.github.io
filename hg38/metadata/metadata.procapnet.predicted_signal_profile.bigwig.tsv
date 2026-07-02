@@ -1,0 +1,13 @@
+track_key	file_accession	experiment	model_accession	model	track_type	format	assay	target	biosample	tissue	organ	system	strand	score_type	qc_flag
+ENCFF568EMG	ENCFF568EMG	ENCSR046BCI	ENCSR072YCM	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	A673	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF245QOS	ENCFF245QOS	ENCSR046BCI	ENCSR072YCM	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	A673	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF512NRZ	ENCFF512NRZ	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	Caco-2	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF781NNR	ENCFF781NNR	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	Caco-2	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF726MZN	ENCFF726MZN	ENCSR935RNW	ENCSR797DEF	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF297DYW	ENCFF297DYW	ENCSR935RNW	ENCSR797DEF	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF977ZRF	ENCFF977ZRF	ENCSR261KBX	ENCSR740IPL	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF810TSX	ENCFF810TSX	ENCSR261KBX	ENCSR740IPL	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF751HYG	ENCFF751HYG	ENCSR799DGV	ENCSR860TYZ	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF413SKO	ENCFF413SKO	ENCSR799DGV	ENCSR860TYZ	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF130FIR	ENCFF130FIR	ENCSR098LLB	ENCSR801ECP	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	endothelial-cell-of-umbilical-vein	endothelial	blood-vessel	circulatory-system	minus	none	passed
+ENCFF522DPN	ENCFF522DPN	ENCSR098LLB	ENCSR801ECP	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	endothelial-cell-of-umbilical-vein	endothelial	blood-vessel	circulatory-system	plus	none	passed

@@ -1,154 +1,145 @@
 track ProCapNet_observed_signal_profile_bigWig
-compositeTrack on
+compositeTrack faceted
 parent EncodeProCapNetTrack
 shortLabel Observed signal
 longLabel ProCapNet observed signal profile bigWig tracks
 type bigWig
 visibility hide
-allButtonPair on
-dragAndDrop subTracks
-subGroup1 model Model ProCapNet=ProCapNet
-subGroup2 track Track observed_signal_profile=observed_signal_profile
-subGroup3 experiment Experiment_ID ENCSR046BCI=ENCSR046BCI ENCSR098LLB=ENCSR098LLB ENCSR100LIJ=ENCSR100LIJ ENCSR261KBX=ENCSR261KBX ENCSR799DGV=ENCSR799DGV ENCSR935RNW=ENCSR935RNW
-subGroup4 model_id Model_ID ENCSR072YCM=ENCSR072YCM ENCSR182QNJ=ENCSR182QNJ ENCSR740IPL=ENCSR740IPL ENCSR797DEF=ENCSR797DEF ENCSR801ECP=ENCSR801ECP ENCSR860TYZ=ENCSR860TYZ
-subGroup5 assay Assay PRO_cap=PRO-cap
-subGroup6 tissue Tissue cell_line=cell-line endothelial=endothelial
-subGroup7 organ Organ blood_vessel=blood-vessel cell_line=cell-line
-subGroup8 system System cell_line=cell-line circulatory_system=circulatory-system
-subGroup9 biosample Biosample A673=A673 Caco_2=Caco-2 Calu3=Calu3 K562=K562 MCF_10A=MCF-10A endothelial_cell_of_umbilical_vein=endothelial-cell-of-umbilical-vein
-subGroup10 output Output Minus=Minus Plus=Plus
-dimensions dimX=biosample dimA=model dimB=assay
-filterComposite dimA dimB
-sortOrder model=+ track=+ experiment=+ model_id=+ assay=+ tissue=+ organ=+ system=+ biosample=+ output=+
+metaDataUrl metadata/metadata.procapnet.observed_signal_profile.bigwig.tsv
+primaryKey track_key
+maxCheckBoxes 30
+defaultSortField biosample
+subtrackUrls experiment=https://www.encodeproject.org/experiments/$$/ model_accession=https://www.encodeproject.org/experiments/$$/ file_accession=https://www.encodeproject.org/files/$$/
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 
-track ProCapNet_observed_signal_profile_Minus_ENCFF248NRG
+track ProCapNet_observed_signal_profile_bigWig_ENCFF248NRG
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF248NRG/@@download/ENCFF248NRG.bigWig
 shortLabel A673 Minus
-longLabel ProCapNet observed signal profile Minus A673 PRO-cap ENCFF248NRG
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR046BCI model_id=ENCSR072YCM assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=Minus
+longLabel ProCapNet observed signal profile Minus A673 PRO-cap ENCSR046BCI ENCFF248NRG
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Plus_ENCFF484JMU
+track ProCapNet_observed_signal_profile_bigWig_ENCFF484JMU
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF484JMU/@@download/ENCFF484JMU.bigWig
 shortLabel A673 Plus
-longLabel ProCapNet observed signal profile Plus A673 PRO-cap ENCFF484JMU
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR046BCI model_id=ENCSR072YCM assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=A673 output=Plus
+longLabel ProCapNet observed signal profile Plus A673 PRO-cap ENCSR046BCI ENCFF484JMU
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Minus_ENCFF674WYH
+track ProCapNet_observed_signal_profile_bigWig_ENCFF674WYH
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF674WYH/@@download/ENCFF674WYH.bigWig
 shortLabel Caco-2 Minus
-longLabel ProCapNet observed signal profile Minus Caco-2 PRO-cap ENCFF674WYH
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR100LIJ model_id=ENCSR182QNJ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=Minus
+longLabel ProCapNet observed signal profile Minus Caco-2 PRO-cap ENCSR100LIJ ENCFF674WYH
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Plus_ENCFF290ILU
+track ProCapNet_observed_signal_profile_bigWig_ENCFF290ILU
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF290ILU/@@download/ENCFF290ILU.bigWig
 shortLabel Caco-2 Plus
-longLabel ProCapNet observed signal profile Plus Caco-2 PRO-cap ENCFF290ILU
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR100LIJ model_id=ENCSR182QNJ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Caco_2 output=Plus
+longLabel ProCapNet observed signal profile Plus Caco-2 PRO-cap ENCSR100LIJ ENCFF290ILU
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Minus_ENCFF694ACJ
+track ProCapNet_observed_signal_profile_bigWig_ENCFF694ACJ
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF694ACJ/@@download/ENCFF694ACJ.bigWig
 shortLabel Calu3 Minus
-longLabel ProCapNet observed signal profile Minus Calu3 PRO-cap ENCFF694ACJ
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR935RNW model_id=ENCSR797DEF assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=Minus
+longLabel ProCapNet observed signal profile Minus Calu3 PRO-cap ENCSR935RNW ENCFF694ACJ
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Plus_ENCFF726ZFO
+track ProCapNet_observed_signal_profile_bigWig_ENCFF726ZFO
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF726ZFO/@@download/ENCFF726ZFO.bigWig
 shortLabel Calu3 Plus
-longLabel ProCapNet observed signal profile Plus Calu3 PRO-cap ENCFF726ZFO
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR935RNW model_id=ENCSR797DEF assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=Calu3 output=Plus
+longLabel ProCapNet observed signal profile Plus Calu3 PRO-cap ENCSR935RNW ENCFF726ZFO
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Minus_ENCFF662SHP
+track ProCapNet_observed_signal_profile_bigWig_ENCFF662SHP
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF662SHP/@@download/ENCFF662SHP.bigWig
 shortLabel K562 Minus
-longLabel ProCapNet observed signal profile Minus K562 PRO-cap ENCFF662SHP
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR261KBX model_id=ENCSR740IPL assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=Minus
+longLabel ProCapNet observed signal profile Minus K562 PRO-cap ENCSR261KBX ENCFF662SHP
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Plus_ENCFF798GNW
+track ProCapNet_observed_signal_profile_bigWig_ENCFF798GNW
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF798GNW/@@download/ENCFF798GNW.bigWig
 shortLabel K562 Plus
-longLabel ProCapNet observed signal profile Plus K562 PRO-cap ENCFF798GNW
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR261KBX model_id=ENCSR740IPL assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=K562 output=Plus
+longLabel ProCapNet observed signal profile Plus K562 PRO-cap ENCSR261KBX ENCFF798GNW
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Minus_ENCFF466PYB
+track ProCapNet_observed_signal_profile_bigWig_ENCFF466PYB
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF466PYB/@@download/ENCFF466PYB.bigWig
 shortLabel MCF-10A Minus
-longLabel ProCapNet observed signal profile Minus MCF-10A PRO-cap ENCFF466PYB
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR799DGV model_id=ENCSR860TYZ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=Minus
+longLabel ProCapNet observed signal profile Minus MCF-10A PRO-cap ENCSR799DGV ENCFF466PYB
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Plus_ENCFF460DXE
+track ProCapNet_observed_signal_profile_bigWig_ENCFF460DXE
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF460DXE/@@download/ENCFF460DXE.bigWig
 shortLabel MCF-10A Plus
-longLabel ProCapNet observed signal profile Plus MCF-10A PRO-cap ENCFF460DXE
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR799DGV model_id=ENCSR860TYZ assay=PRO_cap tissue=cell_line organ=cell_line system=cell_line biosample=MCF_10A output=Plus
+longLabel ProCapNet observed signal profile Plus MCF-10A PRO-cap ENCSR799DGV ENCFF460DXE
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Minus_ENCFF932EJP
+track ProCapNet_observed_signal_profile_bigWig_ENCFF932EJP
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF932EJP/@@download/ENCFF932EJP.bigWig
 shortLabel endothelial-cell-
-longLabel ProCapNet observed signal profile Minus endothelial-cell-of-umbilical-vein PRO-cap ENCFF932EJP
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR098LLB model_id=ENCSR801ECP assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=Minus
+longLabel ProCapNet observed signal profile Minus endothelial-cell-of-umbilical-vein PRO-cap ENCSR098LLB ENCFF932EJP
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on
 
-track ProCapNet_observed_signal_profile_Plus_ENCFF515GWR
+track ProCapNet_observed_signal_profile_bigWig_ENCFF515GWR
 parent ProCapNet_observed_signal_profile_bigWig off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF515GWR/@@download/ENCFF515GWR.bigWig
 shortLabel endothelial-cell-
-longLabel ProCapNet observed signal profile Plus endothelial-cell-of-umbilical-vein PRO-cap ENCFF515GWR
-subGroups model=ProCapNet track=observed_signal_profile experiment=ENCSR098LLB model_id=ENCSR801ECP assay=PRO_cap tissue=endothelial organ=blood_vessel system=circulatory_system biosample=endothelial_cell_of_umbilical_vein output=Plus
+longLabel ProCapNet observed signal profile Plus endothelial-cell-of-umbilical-vein PRO-cap ENCSR098LLB ENCFF515GWR
 visibility full
 color 0,90,180
+html docs/ProCapNet_observed_signal_profile_bigWig.html
 autoScale on

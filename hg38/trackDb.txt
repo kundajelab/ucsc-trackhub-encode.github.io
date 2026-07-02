@@ -2,6 +2,7 @@ track EncodeBPNetTrack
 superTrack on show
 shortLabel ENCODE BPNet (TF ChIP)
 longLabel ENCODE BPNet models trained on TF ChIP-seq: Model predictions, contribution scores, motif instance tracks.
+html docs/encode_deep_learning_models.html
 
 include trackDb.bpnet.normalized_observed_signal_profile.bigwig.txt
 include trackDb.bpnet.normalized_predicted_signal_profile.bigwig.txt
@@ -16,6 +17,7 @@ track EncodeChromBPNetTrack
 superTrack on show
 shortLabel ENCODE ChromBPNet (DNase/ATAC)
 longLabel ENCODE ChromBPNet models trained on DNase-seq/ATAC-seq: Model predictions, contribution scores, motif instance tracks.
+html docs/encode_deep_learning_models.html
 
 include trackDb.chrombpnet.bias_corrected_predicted_signal_profile.bigwig.txt
 include trackDb.chrombpnet.normalized_bias_corrected_predicted_signal_profile.bigwig.txt
@@ -32,6 +34,7 @@ track EncodeProCapNetTrack
 superTrack on show
 shortLabel ENCODE ProCapNet (PRO-cap)
 longLabel ENCODE ProCapNet models trained on PRO-cap: Model predictions, contribution scores, motif instance tracks.
+html docs/encode_deep_learning_models.html
 
 include trackDb.procapnet.observed_signal_profile.bigwig.txt
 include trackDb.procapnet.predicted_signal_profile.bigwig.txt

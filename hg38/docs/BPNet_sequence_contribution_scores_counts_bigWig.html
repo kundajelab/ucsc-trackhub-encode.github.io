@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BPNet Contribution scores (counts)</title>
+</head>
+<body>
+  <h1>BPNet Contribution scores (counts)</h1>
+
+  <h2>Description</h2>
+  <p>Counts contribution tracks show projected DeepLIFT/DeepSHAP sequence contribution scores for the model&#x27;s total-counts output. These scores highlight bases that strongly contribute to the predicted signal level in peak regions.</p>
+  <p>BPNet is a dilated convolutional neural network trained to predict TF ChIP-seq signal from DNA sequence. Each model predicts a central 1,000 bp window from a 2,114 bp sequence input using counts and profile output heads. Models are trained across five chromosome-held-out folds, and browser-ready predictions and contribution scores are averaged across folds.</p>
+  <h2>Display Conventions</h2>
+  <p>This faceted composite contains 1602 bigWig subtrack(s) for BPNet
+  sequence contribution scores counts data from ChIP-seq assays. 5 subtrack(s) in this composite are enabled by default.</p>
+  <p>The faceted table can be filtered by experiment accession, model accession, assay, target, biosample,
+  tissue, organ, system, strand, score type, and file accession. ENCODE accession columns link back to ENCODE
+  pages where possible.</p>
+  <h2>Methods Summary</h2>
+  <p>Observed signals are generated from high-quality, PCR-deduplicated reads. Model predictions and contribution
+  scores are generated in selected peak regions on hg38. Contribution scores use DeepLIFT/DeepSHAP to attribute
+  model outputs back to input sequence. Motif instances are derived from TF-MoDISco motifs and FiNeMo scans.</p>
+  <h2>Data Access</h2>
+  <p>Each subtrack points to its ENCODE bigWig or bigBed download URL. Use the file accession facet or the item
+  details page to identify and retrieve the underlying ENCODE file.</p>
+
+</body>
+</html>
