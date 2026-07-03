@@ -1,7 +1,0 @@
-track_key	file_accession	experiment	model_accession	model	track_type	format	assay	target	biosample	tissue	organ	system	strand	score_type	qc_flag
-ENCFF890XJG	ENCFF890XJG	ENCSR046BCI	ENCSR072YCM	ProCapNet	sequence motifs instances	bigBed	PRO-cap	none	A673	cell-line	cell-line	cell-line	none	none	passed
-ENCFF214LNU	ENCFF214LNU	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	sequence motifs instances	bigBed	PRO-cap	none	Caco-2	cell-line	cell-line	cell-line	none	none	passed
-ENCFF351WJS	ENCFF351WJS	ENCSR935RNW	ENCSR797DEF	ProCapNet	sequence motifs instances	bigBed	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	none	none	passed
-ENCFF624OCH	ENCFF624OCH	ENCSR261KBX	ENCSR740IPL	ProCapNet	sequence motifs instances	bigBed	PRO-cap	none	K562	cell-line	cell-line	cell-line	none	none	passed
-ENCFF264QWB	ENCFF264QWB	ENCSR799DGV	ENCSR860TYZ	ProCapNet	sequence motifs instances	bigBed	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	none	none	passed
-ENCFF479KIM	ENCFF479KIM	ENCSR098LLB	ENCSR801ECP	ProCapNet	sequence motifs instances	bigBed	PRO-cap	none	endothelial-cell-of-umbilical-vein	endothelial	blood-vessel	circulatory-system	none	none	passed
