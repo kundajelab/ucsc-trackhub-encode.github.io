@@ -3,7 +3,7 @@ compositeTrack faceted
 parent EncodeProCapNetTrack
 shortLabel ProCapNet tracks
 longLabel ProCapNet model tracks
-type bed3
+type bed 3
 visibility hide
 metaDataUrl metadata/metadata.procapnet.tsv
 primaryKey track_key
