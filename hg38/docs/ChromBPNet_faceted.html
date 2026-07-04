@@ -9,10 +9,51 @@
 
   <h2>Description</h2>
   <p>This track displays browser-ready ChromBPNet resources from
-  1,512 individual ENCODE experiments and 15,111 files on the hg38
+  1,512 individual ENCODE experiments/models and 15,111 browser-ready files on the hg38
   genome assembly. ChromBPNet models chromatin accessibility from DNase-seq and ATAC-seq signal. It uses a BPNet-style architecture with additional convolutional filters to learn the complex combinations and spacing of motifs that drive accessibility, plus a separate bias-correction module that models and removes sequence bias introduced by DNase I or Tn5. Browser-ready tracks include observed signal, predicted signal, bias-corrected predicted signal, contribution scores, selected regions, and motif instance calls where available.</p>
-  <p>The composite includes bigBed, bigWig tracks for bias-corrected predicted signal profile, normalized bias-corrected predicted signal profile, normalized observed signal profile, normalized predicted signal profile, observed signal profile, predicted signal profile, selected regions for predicted signal and sequence contribution scores, sequence contribution scores counts, sequence contribution scores profile, sequence motifs instances.</p>
   
+  <h3>Experimental signal</h3>
+  <p>Experimental signal tracks contain measured DNase-seq or ATAC-seq chromatin accessibility signal used to
+  train and evaluate ChromBPNet models.</p>
+  <ul>
+    <li><b>normalized observed signal profile</b> - bigWig; normalized experimentally observed base-resolution
+    DNase-seq or ATAC-seq signal.</li>
+    <li><b>observed signal profile</b> - bigWig; experimentally observed base-resolution DNase-seq or ATAC-seq
+    signal.</li>
+  </ul>
+  <h3>Model predictions</h3>
+  <p>Prediction tracks contain ChromBPNet predictions in accessibility peak regions on hg38. Bias-corrected tracks
+  remove modeled DNase I or Tn5 sequence bias.</p>
+  <ul>
+    <li><b>normalized predicted signal profile</b> - bigWig; normalized predicted chromatin accessibility signal
+    profile in peak regions.</li>
+    <li><b>normalized bias-corrected predicted signal profile</b> - bigWig; normalized predicted accessibility
+    signal with the enzyme-bias component removed.</li>
+    <li><b>predicted signal profile</b> - bigWig; predicted chromatin accessibility signal profile in peak
+    regions.</li>
+    <li><b>bias-corrected predicted signal profile</b> - bigWig; predicted accessibility signal with the
+    enzyme-bias component removed.</li>
+    <li><b>selected regions for predicted signal and sequence contribution scores</b> - bed or bigBed; genomic
+    peak regions used to calculate model predictions and contribution scores.</li>
+  </ul>
+  <h3>Contribution scores</h3>
+  <p>Contribution score tracks show bases that contribute to predicted accessibility, calculated from the main
+  ChromBPNet model so enzyme-bias contribution is excluded.</p>
+  <ul>
+    <li><b>counts sequence contribution scores</b> - bigWig; projected sequence contribution toward total predicted
+    accessibility counts.</li>
+    <li><b>profile sequence contribution scores</b> - bigWig; projected sequence contribution toward predicted
+    accessibility profile shape.</li>
+  </ul>
+  <h3>Genomic instances</h3>
+  <p>Genomic instance tracks identify accessibility-related TF motif instances discovered from ChromBPNet
+  contribution scores with TF-MoDISco and scanned with FiNeMo.</p>
+  <ul>
+    <li><b>sequence motifs instances</b> - bigBed; browser-ready genomic instance calls of TF-MoDISco motifs in
+    peak regions.</li>
+  </ul>
+
+  <p>The composite includes bigBed, bigWig tracks for bias-corrected predicted signal profile, normalized bias-corrected predicted signal profile, normalized observed signal profile, normalized predicted signal profile, observed signal profile, predicted signal profile, selected regions for predicted signal and sequence contribution scores, sequence contribution scores counts, sequence contribution scores profile, sequence motifs instances.</p>
   <p>The track includes these subtrack types:</p>
   <ul>
     <li><b>Signal</b> - a bigWig track containing observed, predicted, bias-corrected, or contribution signal.</li>

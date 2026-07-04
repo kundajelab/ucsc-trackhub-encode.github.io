@@ -9,10 +9,46 @@
 
   <h2>Description</h2>
   <p>This track displays browser-ready ProCapNet resources from
-  6 individual ENCODE experiments and 42 files on the hg38
+  6 individual ENCODE experiments/models and 42 browser-ready files on the hg38
   genome assembly. ProCapNet models transcription initiation from PRO-cap, CAGE, and RAMPAGE signal. It uses a BPNet-style architecture with additional filters to learn transcription-initiation motifs and higher order interactions, including core promoter motifs. Browser-ready tracks include observed signal, predicted signal, sequence contribution scores, selected regions, and motif instance calls where available.</p>
-  <p>The composite includes bigBed, bigWig tracks for observed signal profile, predicted signal profile, sequence contribution scores counts, sequence contribution scores profile, sequence motifs instances.</p>
   
+  <h3>Experimental signal</h3>
+  <p>Experimental signal tracks contain measured PRO-cap transcription-initiation signal used to train and evaluate
+  ProCapNet models.</p>
+  <ul>
+    <li><b>normalized observed signal profile</b> - bigWig; normalized experimentally observed base-resolution
+    PRO-cap signal on the plus or minus strand.</li>
+    <li><b>observed signal profile</b> - bigWig; experimentally observed base-resolution PRO-cap signal on the
+    plus or minus strand.</li>
+  </ul>
+  <h3>Model predictions</h3>
+  <p>Prediction tracks contain denoised ProCapNet predictions in transcription-initiation peak regions on hg38.</p>
+  <ul>
+    <li><b>normalized predicted signal profile</b> - bigWig; normalized predicted PRO-cap signal profile in peak
+    regions on the plus or minus strand.</li>
+    <li><b>predicted signal profile</b> - bigWig; predicted PRO-cap signal profile in peak regions on the plus or
+    minus strand.</li>
+    <li><b>selected regions for predicted signal and sequence contribution scores</b> - bed or bigBed; genomic
+    peak regions used to calculate model predictions and contribution scores.</li>
+  </ul>
+  <h3>Contribution scores</h3>
+  <p>Contribution score tracks show bases that contribute to ProCapNet transcription-initiation predictions,
+  calculated with DeepLIFT/DeepSHAP.</p>
+  <ul>
+    <li><b>counts sequence contribution scores</b> - bigWig; projected sequence contribution toward total predicted
+    counts in the region.</li>
+    <li><b>profile sequence contribution scores</b> - bigWig; projected sequence contribution toward predicted
+    signal profile shape.</li>
+  </ul>
+  <h3>Genomic instances</h3>
+  <p>Genomic instance tracks identify transcription-initiation-related motif instances discovered from ProCapNet
+  contribution scores with TF-MoDISco and scanned with FiNeMo.</p>
+  <ul>
+    <li><b>sequence motifs instances</b> - bigBed; browser-ready genomic instance calls of TF-MoDISco motifs in
+    peak regions.</li>
+  </ul>
+
+  <p>The composite includes bigBed, bigWig tracks for observed signal profile, predicted signal profile, sequence contribution scores counts, sequence contribution scores profile, sequence motifs instances.</p>
   <p>The track includes these subtrack types:</p>
   <ul>
     <li><b>Signal</b> - a bigWig track containing observed, predicted, bias-corrected, or contribution signal.</li>

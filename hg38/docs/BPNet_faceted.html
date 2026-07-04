@@ -9,10 +9,49 @@
 
   <h2>Description</h2>
   <p>This track displays browser-ready BPNet resources from
-  1,602 individual ENCODE experiments and 19,224 files on the hg38
+  2,339 individual ENCODE experiments/models and 19,224 browser-ready files on the hg38
   genome assembly. BPNet is a lightweight, interpretable, dilated convolutional neural network trained to predict transcription factor binding from TF ChIP-seq signal. One BPNet model is trained per TF ChIP-seq experiment to model a specific transcription factor in a specific cell context. Each model uses a 2,114 bp DNA sequence window, predicts counts and profile outputs for the central 1,000 bp window, and is trained across five chromosome-held-out cross-validation folds. Browser-ready predictions and contribution scores are averaged across folds.</p>
-  <p>The composite includes bigBed, bigWig tracks for normalized observed signal profile, normalized predicted signal profile, observed signal profile, predicted signal profile, selected regions for predicted signal and sequence contribution scores, sequence contribution scores counts, sequence contribution scores profile, sequence motifs instances.</p>
   
+  <h3>Experimental signal</h3>
+  <p>Experimental signal tracks contain the measured TF ChIP-seq signal used to train and evaluate BPNet models.
+  BPNet signal is strand-specific because reads accumulate at the 5' end of each strand.</p>
+  <ul>
+    <li><b>normalized observed signal profile</b> - bigWig; normalized experimentally observed base-resolution
+    TF ChIP-seq assay signal on the plus or minus strand. This is recommended for visualization and comparison
+    across datasets.</li>
+    <li><b>observed signal profile</b> - bigWig; experimentally observed base-resolution TF ChIP-seq assay signal
+    on the plus or minus strand.</li>
+  </ul>
+  <h3>Model predictions</h3>
+  <p>Prediction tracks contain denoised BPNet predictions in TF ChIP-seq peak regions on hg38. Predictions are
+  generated independently for each of five fold models and averaged for browser display.</p>
+  <ul>
+    <li><b>normalized predicted signal profile</b> - bigWig; normalized predicted TF ChIP-seq signal profile in
+    peak regions on the plus or minus strand. This is recommended for visualization and comparison across
+    datasets.</li>
+    <li><b>predicted signal profile</b> - bigWig; predicted TF ChIP-seq signal profile in peak regions on the
+    plus or minus strand.</li>
+    <li><b>selected regions for predicted signal and sequence contribution scores</b> - bed or bigBed; genomic
+    peak regions used to calculate model predictions and contribution scores.</li>
+  </ul>
+  <h3>Contribution scores</h3>
+  <p>Contribution score tracks show how each input base contributes to BPNet predictions, calculated with
+  DeepLIFT/DeepSHAP and averaged across folds for browser-ready tracks.</p>
+  <ul>
+    <li><b>counts sequence contribution scores</b> - bigWig; projected sequence contribution toward the total
+    predicted counts in the region.</li>
+    <li><b>profile sequence contribution scores</b> - bigWig; projected sequence contribution toward the predicted
+    signal distribution shape in the region.</li>
+  </ul>
+  <h3>Genomic instances</h3>
+  <p>Genomic instance tracks identify motif instances learned from BPNet contribution scores. Motifs are discovered
+  with TF-MoDISco and scanned with FiNeMo.</p>
+  <ul>
+    <li><b>sequence motifs instances</b> - bigBed; browser-ready genomic instance calls of TF-MoDISco motifs in
+    peak regions, with human-readable motif names where available.</li>
+  </ul>
+
+  <p>The composite includes bigBed, bigWig tracks for normalized observed signal profile, normalized predicted signal profile, observed signal profile, predicted signal profile, selected regions for predicted signal and sequence contribution scores, sequence contribution scores counts, sequence contribution scores profile, sequence motifs instances.</p>
   <p>The track includes these subtrack types:</p>
   <ul>
     <li><b>Signal</b> - a bigWig track containing observed, predicted, bias-corrected, or contribution signal.</li>
