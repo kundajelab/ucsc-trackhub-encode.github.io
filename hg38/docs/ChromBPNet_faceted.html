@@ -10,47 +10,53 @@
   <h2>Description</h2>
   <p>This track displays browser-ready ChromBPNet resources from
   1,512 individual ENCODE experiments/models and 15,111 browser-ready files on the hg38
-  genome assembly. ChromBPNet models chromatin accessibility from DNase-seq and ATAC-seq signal. It uses a BPNet-style architecture with additional convolutional filters to learn the complex combinations and spacing of motifs that drive accessibility, plus a separate bias-correction module that models and removes sequence bias introduced by DNase I or Tn5. Browser-ready tracks include observed signal, predicted signal, bias-corrected predicted signal, contribution scores, selected regions, and motif instance calls where available.</p>
+  genome assembly.</p>
   
-  <h3>Experimental signal</h3>
-  <p>Experimental signal tracks contain measured DNase-seq or ATAC-seq chromatin accessibility signal used to
+  <p><b>ChromBPNet</b> models chromatin accessibility from DNase-seq and ATAC-seq signal. It uses a 
+  BPNet-style architecture with additional convolutional filters to learn the complex combinations and 
+  spacing of motifs that drive accessibility, plus a separate bias-correction module that models and 
+  removes sequence bias introduced by DNase I or Tn5. Browser-ready tracks include observed signal, 
+  predicted signal, bias-corrected predicted signal, contribution scores, selected regions, and motif 
+  instance calls where available.</p>
+  <h2>Track types</h2>
+  <p><b>Experimentally observed signal tracks</b> contain measured DNase-seq or ATAC-seq chromatin accessibility signal used to
   train and evaluate ChromBPNet models.</p>
   <ul>
-    <li><b>normalized observed signal profile</b> - bigWig; normalized experimentally observed base-resolution
-    DNase-seq or ATAC-seq signal.</li>
-    <li><b>observed signal profile</b> - bigWig; experimentally observed base-resolution DNase-seq or ATAC-seq
-    signal.</li>
+    <li><b>normalized observed signal profile</b>: Normalized experimentally observed base-resolution
+    DNase-seq or ATAC-seq signal. (bigWig)</li>
+    <li><b>observed signal profile</b>: Experimentally observed base-resolution DNase-seq or ATAC-seq
+    signal. (bigWig)</li>
   </ul>
-  <h3>Model predictions</h3>
-  <p>Prediction tracks contain ChromBPNet predictions in accessibility peak regions on hg38. Bias-corrected tracks
+  <p><b>Model-predicted signal tracks</b> contain ChromBPNet predictions in accessibility peak regions on hg38. Bias-corrected tracks
   remove modeled DNase I or Tn5 sequence bias.</p>
   <ul>
-    <li><b>normalized predicted signal profile</b> - bigWig; normalized predicted chromatin accessibility signal
-    profile in peak regions.</li>
-    <li><b>normalized bias-corrected predicted signal profile</b> - bigWig; normalized predicted accessibility
-    signal with the enzyme-bias component removed.</li>
-    <li><b>predicted signal profile</b> - bigWig; predicted chromatin accessibility signal profile in peak
-    regions.</li>
-    <li><b>bias-corrected predicted signal profile</b> - bigWig; predicted accessibility signal with the
-    enzyme-bias component removed.</li>
-    <li><b>selected regions for predicted signal and sequence contribution scores</b> - bed or bigBed; genomic
-    peak regions used to calculate model predictions and contribution scores.</li>
+    <li><b>normalized predicted signal profile</b>: Normalized predicted chromatin accessibility signal
+    profile in peak regions. (bigWig)</li>
+    <li><b>normalized bias-corrected predicted signal profile</b>: Normalized predicted accessibility
+    signal with the enzyme-bias component removed. (bigWig)</li>
+    <li><b>predicted signal profile</b>: Predicted chromatin accessibility signal profile in peak
+    regions. (bigWig)</li>
+    <li><b>bias-corrected predicted signal profile</b>: Predicted accessibility signal with the
+    enzyme-bias component removed. (bigWig)</li>
   </ul>
-  <h3>Contribution scores</h3>
-  <p>Contribution score tracks show bases that contribute to predicted accessibility, calculated from the main
+  <p><b>Contribution score tracks</b> show bases that contribute to predicted accessibility, calculated from the main
   ChromBPNet model so enzyme-bias contribution is excluded.</p>
   <ul>
-    <li><b>counts sequence contribution scores</b> - bigWig; projected sequence contribution toward total predicted
-    accessibility counts.</li>
-    <li><b>profile sequence contribution scores</b> - bigWig; projected sequence contribution toward predicted
-    accessibility profile shape.</li>
+    <li><b>counts sequence contribution scores</b>: Projected sequence contribution toward total predicted
+    accessibility counts. (bigWig)</li>
+    <li><b>profile sequence contribution scores</b>: Projected sequence contribution toward predicted
+    accessibility profile shape. (bigWig)</li>
   </ul>
-  <h3>Genomic instances</h3>
-  <p>Genomic instance tracks identify accessibility-related TF motif instances discovered from ChromBPNet
+  <p><b>Genomic instance tracks</b> identify accessibility-related TF motif instances discovered from ChromBPNet
   contribution scores with TF-MoDISco and scanned with FiNeMo.</p>
   <ul>
-    <li><b>sequence motifs instances</b> - bigBed; browser-ready genomic instance calls of TF-MoDISco motifs in
-    peak regions.</li>
+    <li><b>sequence motifs instances</b>: Browser-ready genomic instance calls of TF-MoDISco motifs in
+    peak regions. (bigBed)</li>
+  </ul>
+  <p><b>Selected region tracks</b> mark the peak regions used to generate model predictions and sequence contribution scores.</p>
+  <ul>
+    <li><b>selected regions for predicted signal and sequence contribution scores</b>: Genomic
+    peak regions used to calculate model predictions and contribution scores. (bed, bigBed)</li>
   </ul>
 
   <p>The composite includes bigBed, bigWig tracks for bias-corrected predicted signal profile, normalized bias-corrected predicted signal profile, normalized observed signal profile, normalized predicted signal profile, observed signal profile, predicted signal profile, selected regions for predicted signal and sequence contribution scores, sequence contribution scores counts, sequence contribution scores profile, sequence motifs instances.</p>
@@ -62,17 +68,10 @@
   </ul>
   <p>These datasets provide model outputs and underlying experimental signals for ENCODE deep learning resources.
   Additional datasets are available at the <a href="https://www.encodeproject.org/">ENCODE portal</a>.</p>
-  
-  <p>These resources were generated by a uniform processing workflow: observed signal and training regions were
-  prepared from high-quality reads and matched peak/nonpeak regions; models were trained on experimental signal;
-  denoised predictions were generated from trained models; held-out chromosomes were used for performance
-  evaluation; DeepLIFT/DeepSHAP was used to quantify sequence contribution scores; TF-MoDISco was used to discover
-  high-contribution motifs; and FiNeMo was used to locate motif instances.</p>
-
   <h2>Display Conventions and Configuration</h2>
   <p>Click a dataset in the faceted table to view available subtracks. Subtracks can be further filtered by
   experiment accession, model accession, assay, target, biosample, tissue, organ, system, data type, strand,
-  score type, quality-control flag, and file accession.  8 subtrack(s) in this composite are enabled by default.</p>
+  score type, quality-control flag, and file accession.  10 subtrack(s) in this composite are enabled by default.</p>
   <p>Observed signals are generated from high-quality, PCR-deduplicated reads. Model predictions and contribution
   scores are generated in selected peak regions on hg38. Contribution scores use DeepLIFT/DeepSHAP to attribute
   model outputs back to input sequence. Motif instances are derived from TF-MoDISco motifs and FiNeMo scans.</p>
@@ -85,24 +84,11 @@
   original data files are available from the <a href="https://www.encodeproject.org/">ENCODE portal</a>. Clicking
   any accession in the track's configuration table links directly to the corresponding ENCODE experiment, model, or
   file details page.</p>
-  <p>bigWig files may also be locally explored using the UCSC tool bigWigToWig. The tool can be used to obtain
-  data confined to a given range, e.g.,</p>
-  <pre>bigWigToWig -chrom=chr8 -start=127898412 -end=127899647 https://www.encodeproject.org/files/ENCFF203WQU/@@download/ENCFF203WQU.bigWig stdout</pre>
   <h2>Credits</h2>
   <p>Data were generated by the ENCODE Consortium through ENCODE production and analysis laboratories. Model
   training, interpretation, browser-ready packaging, and trackhub integration were developed as part of ENCODE deep
   learning model efforts, including work from the Kundaje lab and ENCODE Data Analysis Center collaborators.</p>
   <h2>References</h2>
-  <p>ENCODE Project Consortium, Moore JE, Purcaro MJ, Pratt HE, Epstein CB, Shoresh N, Adrian J, Kawli T, Davis CA,
-  Dobin A et al. <a href="https://doi.org/10.1038/s41586-020-2493-4">Expanded encyclopaedias of DNA elements in
-  the human and mouse genomes</a>. Nature. 2020 Jul;583(7818):699-710. PMID:
-  <a href="https://www.ncbi.nlm.nih.gov/pubmed/32728249">32728249</a>; PMC:
-  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7410828/">PMC7410828</a>.</p>
-  <p>Moore JE, Pratt HE, Fan K, Phalke N, Fisher J, Elhajjajy SI, Andrews G, Gao M, Shedd N, Fu Y et al.
-  <a href="https://www.nature.com/articles/s41586-025-09909-9">An Expanded Registry of Candidate cis-Regulatory
-  Elements for Studying Transcriptional Regulation</a>. Nature. 2026 January 7. PMID:
-  <a href="https://www.ncbi.nlm.nih.gov/pubmed/39763870">39763870</a>; PMC:
-  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11703161/">PMC11703161</a>.</p>
   <p>Avsec Z, Weilert M, Shrikumar A, Krueger S, Alexandari A, Dalal K, Fropf R, McAnany C, Gagneur J,
   Kundaje A et al. Base-resolution models of transcription-factor binding reveal soft motif syntax. Nat Genet.
   2021;53:354-366.</p>

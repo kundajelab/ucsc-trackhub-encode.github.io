@@ -24,3 +24,12 @@ longLabel ENCODE ProCapNet models trained on PRO-cap: Model predictions, contrib
 html docs/encode_deep_learning_models.html
 
 include trackDb.procapnet.txt
+
+track EncodeReporterNetTrack
+superTrack on show
+priority 4
+shortLabel ENCODE ReporterNet
+longLabel ENCODE ReporterNet models: Model predictions, contribution scores, motif instance tracks.
+html docs/encode_deep_learning_models.html
+
+include trackDb.reporternet.txt

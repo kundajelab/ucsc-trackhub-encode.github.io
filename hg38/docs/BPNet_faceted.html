@@ -9,46 +9,53 @@
 
   <h2>Description</h2>
   <p>This track displays browser-ready BPNet resources from
-  2,339 individual ENCODE experiments/models and 19,224 browser-ready files on the hg38
-  genome assembly. BPNet is a lightweight, interpretable, dilated convolutional neural network trained to predict transcription factor binding from TF ChIP-seq signal. One BPNet model is trained per TF ChIP-seq experiment to model a specific transcription factor in a specific cell context. Each model uses a 2,114 bp DNA sequence window, predicts counts and profile outputs for the central 1,000 bp window, and is trained across five chromosome-held-out cross-validation folds. Browser-ready predictions and contribution scores are averaged across folds.</p>
+  2,339 individual ENCODE experiments/models and 28,068 browser-ready files on the hg38
+  genome assembly.</p>
   
-  <h3>Experimental signal</h3>
-  <p>Experimental signal tracks contain the measured TF ChIP-seq signal used to train and evaluate BPNet models.
+  <p><b>BPNet</b> is a lightweight, interpretable, dilated convolutional neural network trained to predict 
+  transcription factor binding from TF ChIP-seq signal. One BPNet model is trained per TF ChIP-seq 
+  experiment to model a specific transcription factor in a specific cell context. Each model uses a 
+  2,114 bp DNA sequence window, predicts counts and profile outputs for the central 1,000 bp window, 
+  and is trained across five chromosome-held-out cross-validation folds. Browser-ready predictions and 
+  contribution scores are averaged across folds."</p>
+  <h2>Track types</h2>
+  <p>We provide the following types of tracks using the BPNet model outputs:</p>
+  <p><b>Experimentally observed signal tracks</b> contain the measured TF ChIP-seq signal used to train and evaluate BPNet models.
   BPNet signal is strand-specific because reads accumulate at the 5' end of each strand.</p>
   <ul>
-    <li><b>normalized observed signal profile</b> - bigWig; normalized experimentally observed base-resolution
+    <li><b>normalized observed signal profile</b>: Normalized experimentally observed base-resolution
     TF ChIP-seq assay signal on the plus or minus strand. This is recommended for visualization and comparison
-    across datasets.</li>
-    <li><b>observed signal profile</b> - bigWig; experimentally observed base-resolution TF ChIP-seq assay signal
-    on the plus or minus strand.</li>
+    across datasets. (bigWig)</li>
+    <li><b>observed signal profile</b>: Experimentally observed base-resolution TF ChIP-seq assay signal
+    on the plus or minus strand. (bigWig)</li>
   </ul>
-  <h3>Model predictions</h3>
-  <p>Prediction tracks contain denoised BPNet predictions in TF ChIP-seq peak regions on hg38. Predictions are
+  <p><b>Model-predicted signal tracks</b> contain denoised BPNet predictions in TF ChIP-seq peak regions on hg38. Predictions are
   generated independently for each of five fold models and averaged for browser display.</p>
   <ul>
-    <li><b>normalized predicted signal profile</b> - bigWig; normalized predicted TF ChIP-seq signal profile in
+    <li><b>normalized predicted signal profile</b>: Normalized predicted TF ChIP-seq signal profile in
     peak regions on the plus or minus strand. This is recommended for visualization and comparison across
-    datasets.</li>
-    <li><b>predicted signal profile</b> - bigWig; predicted TF ChIP-seq signal profile in peak regions on the
-    plus or minus strand.</li>
-    <li><b>selected regions for predicted signal and sequence contribution scores</b> - bed or bigBed; genomic
-    peak regions used to calculate model predictions and contribution scores.</li>
+    datasets. (bigWig)</li>
+    <li><b>predicted signal profile</b>: Predicted TF ChIP-seq signal profile in peak regions on the
+    plus or minus strand. (bigWig)</li>
   </ul>
-  <h3>Contribution scores</h3>
-  <p>Contribution score tracks show how each input base contributes to BPNet predictions, calculated with
+  <p><b>Contribution score tracks</b> show how each input base contributes to BPNet predictions, calculated with
   DeepLIFT/DeepSHAP and averaged across folds for browser-ready tracks.</p>
   <ul>
-    <li><b>counts sequence contribution scores</b> - bigWig; projected sequence contribution toward the total
-    predicted counts in the region.</li>
-    <li><b>profile sequence contribution scores</b> - bigWig; projected sequence contribution toward the predicted
-    signal distribution shape in the region.</li>
+    <li><b>counts sequence contribution scores</b>: Projected sequence contribution toward the total
+    predicted counts in the region. (bigWig)</li>
+    <li><b>profile sequence contribution scores</b>: Projected sequence contribution toward the predicted
+    signal distribution shape in the region. (bigWig)</li>
   </ul>
-  <h3>Genomic instances</h3>
-  <p>Genomic instance tracks identify motif instances learned from BPNet contribution scores. Motifs are discovered
+  <p><b>Genomic instance tracks</b> identify motif instances learned from BPNet contribution scores. Motifs are discovered
   with TF-MoDISco and scanned with FiNeMo.</p>
   <ul>
-    <li><b>sequence motifs instances</b> - bigBed; browser-ready genomic instance calls of TF-MoDISco motifs in
-    peak regions, with human-readable motif names where available.</li>
+    <li><b>sequence motifs instances</b>: Browser-ready genomic instance calls of TF-MoDISco motifs in
+    peak regions, with human-readable motif names where available. (bigBed)</li>
+  </ul>
+  <p><b>Selected region tracks</b> mark the peak regions used to generate model predictions and sequence contribution scores.</p>
+  <ul>
+    <li><b>selected regions for predicted signal and sequence contribution scores</b>: Genomic
+    peak regions used to calculate model predictions and contribution scores. (bed, bigBed)</li>
   </ul>
 
   <p>The composite includes bigBed, bigWig tracks for normalized observed signal profile, normalized predicted signal profile, observed signal profile, predicted signal profile, selected regions for predicted signal and sequence contribution scores, sequence contribution scores counts, sequence contribution scores profile, sequence motifs instances.</p>
@@ -60,13 +67,6 @@
   </ul>
   <p>These datasets provide model outputs and underlying experimental signals for ENCODE deep learning resources.
   Additional datasets are available at the <a href="https://www.encodeproject.org/">ENCODE portal</a>.</p>
-  
-  <p>These resources were generated by a uniform processing workflow: observed signal and training regions were
-  prepared from high-quality reads and matched peak/nonpeak regions; models were trained on experimental signal;
-  denoised predictions were generated from trained models; held-out chromosomes were used for performance
-  evaluation; DeepLIFT/DeepSHAP was used to quantify sequence contribution scores; TF-MoDISco was used to discover
-  high-contribution motifs; and FiNeMo was used to locate motif instances.</p>
-
   <h2>Display Conventions and Configuration</h2>
   <p>Click a dataset in the faceted table to view available subtracks. Subtracks can be further filtered by
   experiment accession, model accession, assay, target, biosample, tissue, organ, system, data type, strand,
@@ -83,24 +83,11 @@
   original data files are available from the <a href="https://www.encodeproject.org/">ENCODE portal</a>. Clicking
   any accession in the track's configuration table links directly to the corresponding ENCODE experiment, model, or
   file details page.</p>
-  <p>bigWig files may also be locally explored using the UCSC tool bigWigToWig. The tool can be used to obtain
-  data confined to a given range, e.g.,</p>
-  <pre>bigWigToWig -chrom=chr8 -start=127898412 -end=127899647 https://www.encodeproject.org/files/ENCFF203WQU/@@download/ENCFF203WQU.bigWig stdout</pre>
   <h2>Credits</h2>
   <p>Data were generated by the ENCODE Consortium through ENCODE production and analysis laboratories. Model
   training, interpretation, browser-ready packaging, and trackhub integration were developed as part of ENCODE deep
   learning model efforts, including work from the Kundaje lab and ENCODE Data Analysis Center collaborators.</p>
   <h2>References</h2>
-  <p>ENCODE Project Consortium, Moore JE, Purcaro MJ, Pratt HE, Epstein CB, Shoresh N, Adrian J, Kawli T, Davis CA,
-  Dobin A et al. <a href="https://doi.org/10.1038/s41586-020-2493-4">Expanded encyclopaedias of DNA elements in
-  the human and mouse genomes</a>. Nature. 2020 Jul;583(7818):699-710. PMID:
-  <a href="https://www.ncbi.nlm.nih.gov/pubmed/32728249">32728249</a>; PMC:
-  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7410828/">PMC7410828</a>.</p>
-  <p>Moore JE, Pratt HE, Fan K, Phalke N, Fisher J, Elhajjajy SI, Andrews G, Gao M, Shedd N, Fu Y et al.
-  <a href="https://www.nature.com/articles/s41586-025-09909-9">An Expanded Registry of Candidate cis-Regulatory
-  Elements for Studying Transcriptional Regulation</a>. Nature. 2026 January 7. PMID:
-  <a href="https://www.ncbi.nlm.nih.gov/pubmed/39763870">39763870</a>; PMC:
-  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11703161/">PMC11703161</a>.</p>
   <p>Avsec Z, Weilert M, Shrikumar A, Krueger S, Alexandari A, Dalal K, Fropf R, McAnany C, Gagneur J,
   Kundaje A et al. Base-resolution models of transcription-factor binding reveal soft motif syntax. Nat Genet.
   2021;53:354-366.</p>

@@ -1,12 +1,14 @@
 track_key	file_accession	experiment	model_accession	model	track_type	format	assay	target	biosample	tissue	organ	system	strand	score_type	qc_flag
 ENCFF203WQU	ENCFF203WQU	ENCSR000EOT	ENCSR281PSW	ChromBPNet	normalized observed signal profile	bigWig	DNase-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
+ENCFF401SRN	ENCFF401SRN	ENCSR000EOT	ENCSR281PSW	ChromBPNet	normalized predicted signal profile	bigWig	DNase-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF880ZUI	ENCFF880ZUI	ENCSR868FGK	ENCSR893SUD	ChromBPNet	normalized observed signal profile	bigWig	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
+ENCFF296ICJ	ENCFF296ICJ	ENCSR868FGK	ENCSR893SUD	ChromBPNet	normalized predicted signal profile	bigWig	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF211XNT	ENCFF211XNT	ENCSR000EOT	ENCSR281PSW	ChromBPNet	normalized bias-corrected predicted signal profile	bigWig	DNase-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF517MRJ	ENCFF517MRJ	ENCSR868FGK	ENCSR893SUD	ChromBPNet	normalized bias-corrected predicted signal profile	bigWig	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF324CUG	ENCFF324CUG	ENCSR000EOT	ENCSR281PSW	ChromBPNet	sequence contribution scores counts	bigWig	DNase-seq	none	K562	cell-line	cell-line	cell-line	none	counts	passed
-ENCFF667QAY	ENCFF667QAY	ENCSR000EOT	ENCSR281PSW	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF407GCO	ENCFF407GCO	ENCSR868FGK	ENCSR893SUD	ChromBPNet	sequence contribution scores counts	bigWig	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	counts	passed
-ENCFF848VNH	ENCFF848VNH	ENCSR868FGK	ENCSR893SUD	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
+ENCFF196EBU	ENCFF196EBU	ENCSR000EOT	ENCSR281PSW	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
+ENCFF155LMJ	ENCFF155LMJ	ENCSR868FGK	ENCSR893SUD	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF781QTQ	ENCFF781QTQ	ENCSR932KWJ	ENCSR030TAD	ChromBPNet	normalized observed signal profile	bigWig	DNase-seq	none	A172	cell-line	cell-line	cell-line	none	none	passed
 ENCFF444DID	ENCFF444DID	ENCSR220ASC	ENCSR311VBG	ChromBPNet	normalized observed signal profile	bigWig	ATAC-seq	none	A549	cell-line	cell-line	cell-line	none	none	passed
 ENCFF778ZCU	ENCFF778ZCU	ENCSR032RGS	ENCSR394KFZ	ChromBPNet	normalized observed signal profile	bigWig	ATAC-seq	none	A549	cell-line	cell-line	cell-line	none	none	passed
@@ -6295,11 +6297,9 @@ ENCFF078WYK	ENCFF078WYK	ENCSR149XIL	ENCSR782TIO	ChromBPNet	normalized predicted 
 ENCFF090WIO	ENCFF090WIO	ENCSR200OML	ENCSR585BFP	ChromBPNet	normalized predicted signal profile	bigWig	ATAC-seq	none	IMR-90	cell-line	cell-line	cell-line	none	none	passed
 ENCFF466SYX	ENCFF466SYX	ENCSR477RTP	ENCSR458JPR	ChromBPNet	normalized predicted signal profile	bigWig	DNase-seq	none	IMR-90	cell-line	cell-line	cell-line	none	none	passed
 ENCFF868BLD	ENCFF868BLD	ENCSR000EOS	ENCSR460RDN	ChromBPNet	normalized predicted signal profile	bigWig	DNase-seq	none	Jurkat,-Clone-E6-1	cell-line	cell-line	cell-line	none	none	passed
-ENCFF296ICJ	ENCFF296ICJ	ENCSR868FGK	ENCSR893SUD	ChromBPNet	normalized predicted signal profile	bigWig	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF569VMH	ENCFF569VMH	ENCSR956DNB	ENCSR939RXI	ChromBPNet	normalized predicted signal profile	bigWig	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF838ZXM	ENCFF838ZXM	ENCSR483RKN	ENCSR780QKO	ChromBPNet	normalized predicted signal profile	bigWig	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF844JPI	ENCFF844JPI	ENCSR859USB	ENCSR049OFB	ChromBPNet	normalized predicted signal profile	bigWig	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
-ENCFF401SRN	ENCFF401SRN	ENCSR000EOT	ENCSR281PSW	ChromBPNet	normalized predicted signal profile	bigWig	DNase-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF620KEI	ENCFF620KEI	ENCSR426IEA	ENCSR933HJE	ChromBPNet	normalized predicted signal profile	bigWig	DNase-seq	none	KBM-7	cell-line	cell-line	cell-line	none	none	passed
 ENCFF296NEV	ENCFF296NEV	ENCSR019JDO	ENCSR625YHF	ChromBPNet	normalized predicted signal profile	bigWig	DNase-seq	none	Karpas-422	cell-line	cell-line	cell-line	none	none	passed
 ENCFF006YHG	ENCFF006YHG	ENCSR314EZY	ENCSR134TII	ChromBPNet	normalized predicted signal profile	bigWig	DNase-seq	none	L1-S8	cell-line	cell-line	cell-line	none	none	passed
@@ -12203,9 +12203,9 @@ ENCFF424KRI	ENCFF424KRI	ENCSR000EMP	ENCSR050OKX	ChromBPNet	sequence motifs insta
 ENCFF238IUP	ENCFF238IUP	ENCSR000EMQ	ENCSR267GLX	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	GM06990	cell-line	cell-line	cell-line	none	none	passed
 ENCFF500SYX	ENCFF500SYX	ENCSR000EMR	ENCSR473GBP	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	GM12864	cell-line	cell-line	cell-line	none	none	passed
 ENCFF427RLO	ENCFF427RLO	ENCSR000EMS	ENCSR430QYB	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	GM12865	cell-line	cell-line	cell-line	none	none	passed
-ENCFF310VIV	ENCFF310VIV	ENCSR637XSC	ENCSR081YFO	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	GM12878	cell-line	cell-line	cell-line	none	none	passed
+ENCFF333DZI	ENCFF333DZI	ENCSR637XSC	ENCSR081YFO	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	GM12878	cell-line	cell-line	cell-line	none	none	passed
 ENCFF634GKW	ENCFF634GKW	ENCSR095QNB	ENCSR067KBX	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	GM12878	cell-line	cell-line	cell-line	none	none	passed
-ENCFF093WQX	ENCFF093WQX	ENCSR000EMT	ENCSR108TCK	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	GM12878	cell-line	cell-line	cell-line	none	none	passed
+ENCFF517GHA	ENCFF517GHA	ENCSR000EMT	ENCSR108TCK	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	GM12878	cell-line	cell-line	cell-line	none	none	passed
 ENCFF789BPP	ENCFF789BPP	ENCSR924SDV	ENCSR124DAF	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	GM18498	cell-line	cell-line	cell-line	none	none	passed
 ENCFF339CFG	ENCFF339CFG	ENCSR700HPA	ENCSR248SEV	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	GM18499	cell-line	cell-line	cell-line	none	none	passed
 ENCFF010THF	ENCFF010THF	ENCSR241VGH	ENCSR926DJN	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	GM18502	cell-line	cell-line	cell-line	none	none	passed
@@ -12260,7 +12260,7 @@ ENCFF128XOA	ENCFF128XOA	ENCSR217TAW	ENCSR174HCP	ChromBPNet	sequence motifs insta
 ENCFF111IVS	ENCFF111IVS	ENCSR485TLP	ENCSR686RDV	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	GM23338	cell-line	cell-line	cell-line	none	none	passed
 ENCFF029SXO	ENCFF029SXO	ENCSR004SUL	ENCSR397BXY	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	GM23338	cell-line	cell-line	cell-line	none	none	passed
 ENCFF490SNY	ENCFF490SNY	ENCSR108PUO	ENCSR871HMB	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	GM23338	cell-line	cell-line	cell-line	none	none	passed
-ENCFF927VYS	ENCFF927VYS	ENCSR000EMU	ENCSR337VRS	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	H1	cell-line	cell-line	cell-line	none	none	passed
+ENCFF159GBA	ENCFF159GBA	ENCSR000EMU	ENCSR337VRS	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	H1	cell-line	cell-line	cell-line	none	none	passed
 ENCFF455UGW	ENCFF455UGW	ENCSR809CEA	ENCSR043HVG	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	H4	cell-line	cell-line	cell-line	none	none	passed
 ENCFF245SME	ENCFF245SME	ENCSR000EMZ	ENCSR989KYH	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	H7	cell-line	cell-line	cell-line	none	none	passed
 ENCFF029YCF	ENCFF029YCF	ENCSR964WHY	ENCSR878NYN	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	H9	cell-line	cell-line	cell-line	none	none	passed
@@ -12337,9 +12337,9 @@ ENCFF040BIN	ENCFF040BIN	ENCSR959ZXU	ENCSR098ONJ	ChromBPNet	sequence motifs insta
 ENCFF806OJX	ENCFF806OJX	ENCSR000ENO	ENCSR231LNG	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	HeLa-S3	cell-line	cell-line	cell-line	none	none	passed
 ENCFF568JGS	ENCFF568JGS	ENCSR042AWH	ENCSR616TYK	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	HepG2	cell-line	cell-line	cell-line	none	none	passed
 ENCFF788PVZ	ENCFF788PVZ	ENCSR291GJU	ENCSR476FKK	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	HepG2	cell-line	cell-line	cell-line	none	none	passed
-ENCFF445GEV	ENCFF445GEV	ENCSR149XIL	ENCSR782TIO	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	HepG2	cell-line	cell-line	cell-line	none	none	passed
-ENCFF142ITE	ENCFF142ITE	ENCSR200OML	ENCSR585BFP	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	IMR-90	cell-line	cell-line	cell-line	none	none	passed
-ENCFF501BYW	ENCFF501BYW	ENCSR477RTP	ENCSR458JPR	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	IMR-90	cell-line	cell-line	cell-line	none	none	passed
+ENCFF729ZYR	ENCFF729ZYR	ENCSR149XIL	ENCSR782TIO	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	HepG2	cell-line	cell-line	cell-line	none	none	passed
+ENCFF443DFP	ENCFF443DFP	ENCSR200OML	ENCSR585BFP	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	IMR-90	cell-line	cell-line	cell-line	none	none	passed
+ENCFF565RIY	ENCFF565RIY	ENCSR477RTP	ENCSR458JPR	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	IMR-90	cell-line	cell-line	cell-line	none	none	passed
 ENCFF367ZZG	ENCFF367ZZG	ENCSR000EOS	ENCSR460RDN	ChromBPNet	sequence motifs instances	bigBed	DNase-seq	none	Jurkat,-Clone-E6-1	cell-line	cell-line	cell-line	none	none	passed
 ENCFF062UIS	ENCFF062UIS	ENCSR483RKN	ENCSR780QKO	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF202OSG	ENCFF202OSG	ENCSR956DNB	ENCSR939RXI	ChromBPNet	sequence motifs instances	bigBed	ATAC-seq	none	K562	cell-line	cell-line	cell-line	none	none	passed

@@ -10,42 +10,48 @@
   <h2>Description</h2>
   <p>This track displays browser-ready ProCapNet resources from
   6 individual ENCODE experiments/models and 42 browser-ready files on the hg38
-  genome assembly. ProCapNet models transcription initiation from PRO-cap, CAGE, and RAMPAGE signal. It uses a BPNet-style architecture with additional filters to learn transcription-initiation motifs and higher order interactions, including core promoter motifs. Browser-ready tracks include observed signal, predicted signal, sequence contribution scores, selected regions, and motif instance calls where available.</p>
+  genome assembly.</p>
   
-  <h3>Experimental signal</h3>
-  <p>Experimental signal tracks contain measured PRO-cap transcription-initiation signal used to train and evaluate
+  <p><b>ProCapNet</b> models transcription initiation from PRO-cap, CAGE, and RAMPAGE signal. It uses a 
+  BPNet-style architecture with additional filters to learn transcription-initiation motifs and higher 
+  order interactions, including core promoter motifs. Browser-ready tracks include observed signal, 
+  predicted signal, sequence contribution scores, selected regions, and motif instance calls where 
+  available.</p>
+  <p><b>Experimentally observed signal tracks</b> contain measured PRO-cap transcription-initiation signal used to train and evaluate
   ProCapNet models.</p>
   <ul>
-    <li><b>normalized observed signal profile</b> - bigWig; normalized experimentally observed base-resolution
-    PRO-cap signal on the plus or minus strand.</li>
-    <li><b>observed signal profile</b> - bigWig; experimentally observed base-resolution PRO-cap signal on the
-    plus or minus strand.</li>
+    <li><b>normalized observed signal profile</b>: Normalized experimentally observed base-resolution
+    PRO-cap signal on the plus or minus strand. (bigWig)</li>
+    <li><b>observed signal profile</b>: Experimentally observed base-resolution PRO-cap signal on the
+    plus or minus strand. (bigWig)</li>
   </ul>
-  <h3>Model predictions</h3>
-  <p>Prediction tracks contain denoised ProCapNet predictions in transcription-initiation peak regions on hg38.</p>
+  <p><b>Model-predicted signal tracks</b> contain denoised ProCapNet predictions in transcription-initiation peak regions on hg38.</p>
   <ul>
-    <li><b>normalized predicted signal profile</b> - bigWig; normalized predicted PRO-cap signal profile in peak
-    regions on the plus or minus strand.</li>
-    <li><b>predicted signal profile</b> - bigWig; predicted PRO-cap signal profile in peak regions on the plus or
-    minus strand.</li>
-    <li><b>selected regions for predicted signal and sequence contribution scores</b> - bed or bigBed; genomic
-    peak regions used to calculate model predictions and contribution scores.</li>
+    <li><b>normalized predicted signal profile</b>: Normalized predicted PRO-cap signal profile in peak
+    regions on the plus or minus strand. (bigWig)</li>
+    <li><b>predicted signal profile</b>: Predicted PRO-cap signal profile in peak regions on the plus or
+    minus strand. (bigWig)</li>
+    <li><b>selected regions for predicted signal and sequence contribution scores</b>: Genomic
+    peak regions used to calculate model predictions and contribution scores. (bed, bigBed)</li>
   </ul>
-  <h3>Contribution scores</h3>
-  <p>Contribution score tracks show bases that contribute to ProCapNet transcription-initiation predictions,
+  <p><b>Contribution score tracks</b> show bases that contribute to ProCapNet transcription-initiation predictions,
   calculated with DeepLIFT/DeepSHAP.</p>
   <ul>
-    <li><b>counts sequence contribution scores</b> - bigWig; projected sequence contribution toward total predicted
-    counts in the region.</li>
-    <li><b>profile sequence contribution scores</b> - bigWig; projected sequence contribution toward predicted
-    signal profile shape.</li>
+    <li><b>counts sequence contribution scores</b>: Projected sequence contribution toward total predicted
+    counts in the region. (bigWig)</li>
+    <li><b>profile sequence contribution scores</b>: Projected sequence contribution toward predicted
+    signal profile shape. (bigWig)</li>
   </ul>
-  <h3>Genomic instances</h3>
-  <p>Genomic instance tracks identify transcription-initiation-related motif instances discovered from ProCapNet
+  <p><b>Genomic instance tracks</b> identify transcription-initiation-related motif instances discovered from ProCapNet
   contribution scores with TF-MoDISco and scanned with FiNeMo.</p>
   <ul>
-    <li><b>sequence motifs instances</b> - bigBed; browser-ready genomic instance calls of TF-MoDISco motifs in
-    peak regions.</li>
+    <li><b>sequence motifs instances</b>: browser-ready genomic instance calls of TF-MoDISco motifs in
+    peak regions. (bigBed)</li>
+  </ul>
+  <p><b>Selected region tracks</b> mark the peak regions used to generate model predictions and sequence contribution scores.</p>
+  <ul>
+    <li><b>selected regions for predicted signal and sequence contribution scores</b>: Genomic
+    peak regions used to calculate model predictions and contribution scores. (bed, bigBed)</li>
   </ul>
 
   <p>The composite includes bigBed, bigWig tracks for observed signal profile, predicted signal profile, sequence contribution scores counts, sequence contribution scores profile, sequence motifs instances.</p>
@@ -57,13 +63,6 @@
   </ul>
   <p>These datasets provide model outputs and underlying experimental signals for ENCODE deep learning resources.
   Additional datasets are available at the <a href="https://www.encodeproject.org/">ENCODE portal</a>.</p>
-  
-  <p>These resources were generated by a uniform processing workflow: observed signal and training regions were
-  prepared from high-quality reads and matched peak/nonpeak regions; models were trained on experimental signal;
-  denoised predictions were generated from trained models; held-out chromosomes were used for performance
-  evaluation; DeepLIFT/DeepSHAP was used to quantify sequence contribution scores; TF-MoDISco was used to discover
-  high-contribution motifs; and FiNeMo was used to locate motif instances.</p>
-
   <h2>Display Conventions and Configuration</h2>
   <p>Click a dataset in the faceted table to view available subtracks. Subtracks can be further filtered by
   experiment accession, model accession, assay, target, biosample, tissue, organ, system, data type, strand,
@@ -80,24 +79,11 @@
   original data files are available from the <a href="https://www.encodeproject.org/">ENCODE portal</a>. Clicking
   any accession in the track's configuration table links directly to the corresponding ENCODE experiment, model, or
   file details page.</p>
-  <p>bigWig files may also be locally explored using the UCSC tool bigWigToWig. The tool can be used to obtain
-  data confined to a given range, e.g.,</p>
-  <pre>bigWigToWig -chrom=chr8 -start=127898412 -end=127899647 https://www.encodeproject.org/files/ENCFF203WQU/@@download/ENCFF203WQU.bigWig stdout</pre>
   <h2>Credits</h2>
   <p>Data were generated by the ENCODE Consortium through ENCODE production and analysis laboratories. Model
   training, interpretation, browser-ready packaging, and trackhub integration were developed as part of ENCODE deep
   learning model efforts, including work from the Kundaje lab and ENCODE Data Analysis Center collaborators.</p>
   <h2>References</h2>
-  <p>ENCODE Project Consortium, Moore JE, Purcaro MJ, Pratt HE, Epstein CB, Shoresh N, Adrian J, Kawli T, Davis CA,
-  Dobin A et al. <a href="https://doi.org/10.1038/s41586-020-2493-4">Expanded encyclopaedias of DNA elements in
-  the human and mouse genomes</a>. Nature. 2020 Jul;583(7818):699-710. PMID:
-  <a href="https://www.ncbi.nlm.nih.gov/pubmed/32728249">32728249</a>; PMC:
-  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7410828/">PMC7410828</a>.</p>
-  <p>Moore JE, Pratt HE, Fan K, Phalke N, Fisher J, Elhajjajy SI, Andrews G, Gao M, Shedd N, Fu Y et al.
-  <a href="https://www.nature.com/articles/s41586-025-09909-9">An Expanded Registry of Candidate cis-Regulatory
-  Elements for Studying Transcriptional Regulation</a>. Nature. 2026 January 7. PMID:
-  <a href="https://www.ncbi.nlm.nih.gov/pubmed/39763870">39763870</a>; PMC:
-  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11703161/">PMC11703161</a>.</p>
   <p>Avsec Z, Weilert M, Shrikumar A, Krueger S, Alexandari A, Dalal K, Fropf R, McAnany C, Gagneur J,
   Kundaje A et al. Base-resolution models of transcription-factor binding reveal soft motif syntax. Nat Genet.
   2021;53:354-366.</p>
