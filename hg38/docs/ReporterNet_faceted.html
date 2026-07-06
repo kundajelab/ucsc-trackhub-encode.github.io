@@ -12,34 +12,33 @@
   8 individual ENCODE experiments/models and 16 browser-ready files on the hg38
   genome assembly.</p>
   
-  <p>ReporterNet resources use the following output categories:</p>
+  <p><b>ReporterNet</b> models <i>regulatory activity</i> from large-scale reporter assays, including MPRA, lentiMPRA,
+  WG-STARR-seq, and ATAC-STARR-seq. ReporterNet modifies the BPNet-style architecture for shorter 
+  sequence windows and reporter-assay outputs, and uses additional convolutional filters. Browser-ready tracks
+  include predicted regulatory activity signal and sequence contribution scores.</p>
+  <h3>Predicted signal tracks</h3>
+  <p><b>Model-predicted signal tracks</b> contain ReporterNet fold-mean predicted regulatory activity over assayed
+  reporter windows on hg38. We provide the following tracks:</p>
   <ul>
-    <li><b>Input regions</b> - <i>training and test regions</i> tar files with training, validation, and test
-    regions plus the MPRA training/test data table.</li>
-    <li><b>Predicted signal</b> - <i>predicted signal profile</i> bigWig files containing fold-mean predicted
-    activity over assayed windows, represented as an unstranded single scalar per window; predicted signal tar
-    files contain per-fold and fold-mean predicted activity in HDF5.</li>
-    <li><b>Models</b> - <i>models</i> tar files containing per-fold trained ReporterNet models (.h5), the
-    training/test data table, and fold-split JSON files.</li>
-    <li><b>Contribution scores</b> - <i>counts sequence contribution scores</i> bigWig files containing fold-mean
-    contributions to predicted activity for ReporterNet's single output head; counts contribution tar files contain
-    per-fold and averaged contribution scores in HDF5.</li>
-    <li><b>Discovered motifs</b> - <i>sequence motifs</i> tar files containing TF-MoDISco motifs from contribution
-    scores, and <i>sequence motifs report</i> tar files containing HTML summary reports.</li>
-    <li><b>Motif instances</b> - <i>sequence motifs instances</i> tar files containing FiNeMo motif-instance calls
-    across sensitivity thresholds.</li>
+    <li><b>predicted signal profile</b>: Predicted reporter activity signal for MPRA, lentiMPRA, WG-STARR-seq,
+    or ATAC-STARR-seq models. (bigWig)</li>
+  </ul>
+  <h3>Contribution score tracks</h3>
+  <p><b>Contribution score tracks</b> show bases that contribute to ReporterNet predicted regulatory activity,
+  calculated for the single predicted-activity output head. We provide the following tracks:</p>
+  <ul>
+    <li><b>counts sequence contribution scores</b>: Projected sequence contribution toward predicted reporter
+    activity. (bigWig)</li>
   </ul>
 
   <p>In total, the composite track includes bigWig tracks for predicted signal profile, sequence contribution scores counts.</p>
-  <p>InThese datasets provide model outputs and underlying experimental signals for ENCODE deep learning resources.
+  <p>These datasets provide model outputs and, where available, underlying experimental signals for ENCODE deep learning resources.
   Additional datasets are available at the <a href="https://www.encodeproject.org/">ENCODE portal</a>.</p>
   <h2>Display conventions and configuration</h2>
   <p>Click a dataset in the faceted table to view available subtracks. Subtracks can be further filtered by
   experiment accession, model accession, assay, target, biosample, tissue, organ, system, data type, strand,
   score type, quality-control flag, and file accession.  Subtracks in this composite are hidden by default and can be selected from the faceted table.</p>
-  <p>Observed signals are generated from high-quality, PCR-deduplicated reads. Model predictions and contribution
-  scores are generated in selected peak regions on hg38. Contribution scores use DeepLIFT/DeepSHAP to attribute
-  model outputs back to input sequence. Motif instances are derived from TF-MoDISco motifs and FiNeMo scans.</p>
+  <p>Model predictions are generated for assayed reporter windows on hg38. Contribution scores use DeepLIFT/DeepSHAP to attribute model outputs back to input sequence.</p>
   <h2>Data access and use</h2>
   <p>The ReporterNet data on the UCSC Genome Browser can be explored interactively with the
   <a href="https://genome.ucsc.edu/cgi-bin/hgTables">Table Browser</a> or the
