@@ -20,8 +20,9 @@
   contribution scores are averaged across folds."</p>
   <h2>Track types</h2>
   <p>We provide the following types of tracks using the BPNet model outputs:</p>
+  <h3>Observed signal tracks</h3>
   <p><b>Experimentally observed signal tracks</b> contain the measured TF ChIP-seq signal used to train and evaluate BPNet models.
-  BPNet signal is strand-specific because reads accumulate at the 5' end of each strand.</p>
+  BPNet signal is strand-specific because reads accumulate at the 5' end of each strand. We provide the following tracks:</p>
   <ul>
     <li><b>normalized observed signal profile</b>: Normalized experimentally observed base-resolution
     TF ChIP-seq assay signal on the plus or minus strand. This is recommended for visualization and comparison
@@ -29,8 +30,9 @@
     <li><b>observed signal profile</b>: Experimentally observed base-resolution TF ChIP-seq assay signal
     on the plus or minus strand. (bigWig)</li>
   </ul>
+  <h3>Predicted signal tracks</h3>
   <p><b>Model-predicted signal tracks</b> contain denoised BPNet predictions in TF ChIP-seq peak regions on hg38. Predictions are
-  generated independently for each of five fold models and averaged for browser display.</p>
+  generated independently for each of five fold models and averaged for browser display. We provide the following tracks:</p>
   <ul>
     <li><b>normalized predicted signal profile</b>: Normalized predicted TF ChIP-seq signal profile in
     peak regions on the plus or minus strand. This is recommended for visualization and comparison across
@@ -38,21 +40,25 @@
     <li><b>predicted signal profile</b>: Predicted TF ChIP-seq signal profile in peak regions on the
     plus or minus strand. (bigWig)</li>
   </ul>
+  <h3>Contribution score tracks</h3>
   <p><b>Contribution score tracks</b> show how each input base contributes to BPNet predictions, calculated with
-  DeepLIFT/DeepSHAP and averaged across folds for browser-ready tracks.</p>
+  DeepLIFT/DeepSHAP and averaged across folds for browser-ready tracks. We provide the following tracks:</p>
   <ul>
     <li><b>counts sequence contribution scores</b>: Projected sequence contribution toward the total
     predicted counts in the region. (bigWig)</li>
     <li><b>profile sequence contribution scores</b>: Projected sequence contribution toward the predicted
     signal distribution shape in the region. (bigWig)</li>
   </ul>
+  <h3>Genomic instance tracks</h3>
   <p><b>Genomic instance tracks</b> identify motif instances learned from BPNet contribution scores. Motifs are discovered
-  with TF-MoDISco and scanned with FiNeMo.</p>
+  with TF-MoDISco and scanned with FiNeMo. We provide the following tracks:</p>
   <ul>
     <li><b>sequence motifs instances</b>: Browser-ready genomic instance calls of TF-MoDISco motifs in
     peak regions, with human-readable motif names where available. (bigBed)</li>
   </ul>
-  <p><b>Selected region tracks</b> mark the peak regions used to generate model predictions and sequence contribution scores.</p>
+  <h3>Selected region tracks</h3>
+  <p><b>Selected region tracks</b> mark the peak regions used to generate model predictions and sequence contribution scores. 
+  We provide the following tracks:</p>
   <ul>
     <li><b>selected regions for predicted signal and sequence contribution scores</b>: Genomic
     peak regions used to calculate model predictions and contribution scores. (bed, bigBed)</li>
@@ -88,8 +94,7 @@
   training, interpretation, browser-ready packaging, and trackhub integration were developed as part of ENCODE deep
   learning model efforts, including work from the Kundaje lab and ENCODE Data Analysis Center collaborators.</p>
   <h2>References</h2>
-  <p>Avsec Z, Weilert M, Shrikumar A, Krueger S, Alexandari A, Dalal K, Fropf R, McAnany C, Gagneur J,
-  Kundaje A et al. Base-resolution models of transcription-factor binding reveal soft motif syntax. Nat Genet.
+  <p>Avsec Z et al. <a href="https://doi.org/10.1038/s41588-021-00782-6">Base-resolution models of transcription-factor binding reveal soft motif syntax. Nat Genet.
   2021;53:354-366.</p>
   <p>Pampari A et al. <a href="https://doi.org/10.1101/2024.12.25.630221">ChromBPNet: bias factorized,
   base-resolution deep learning models of chromatin accessibility reveal cis-regulatory sequence syntax,

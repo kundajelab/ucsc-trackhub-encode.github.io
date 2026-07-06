@@ -19,16 +19,18 @@
   predicted signal, bias-corrected predicted signal, contribution scores, selected regions, and motif 
   instance calls where available.</p>
   <h2>Track types</h2>
+  <h3>Observed signal tracks</h3>
   <p><b>Experimentally observed signal tracks</b> contain measured DNase-seq or ATAC-seq chromatin accessibility signal used to
-  train and evaluate ChromBPNet models.</p>
+  train and evaluate ChromBPNet models. We provide the following tracks:</p>
   <ul>
     <li><b>normalized observed signal profile</b>: Normalized experimentally observed base-resolution
     DNase-seq or ATAC-seq signal. (bigWig)</li>
     <li><b>observed signal profile</b>: Experimentally observed base-resolution DNase-seq or ATAC-seq
     signal. (bigWig)</li>
   </ul>
+  <h3>Predicted signal tracks</h3>
   <p><b>Model-predicted signal tracks</b> contain ChromBPNet predictions in accessibility peak regions on hg38. Bias-corrected tracks
-  remove modeled DNase I or Tn5 sequence bias.</p>
+  remove modeled DNase I or Tn5 sequence bias. We provide the following tracks:</p>
   <ul>
     <li><b>normalized predicted signal profile</b>: Normalized predicted chromatin accessibility signal
     profile in peak regions. (bigWig)</li>
@@ -39,21 +41,25 @@
     <li><b>bias-corrected predicted signal profile</b>: Predicted accessibility signal with the
     enzyme-bias component removed. (bigWig)</li>
   </ul>
+  <h3>Contribution score tracks</h3>
   <p><b>Contribution score tracks</b> show bases that contribute to predicted accessibility, calculated from the main
-  ChromBPNet model so enzyme-bias contribution is excluded.</p>
+  ChromBPNet model so enzyme-bias contribution is excluded. We provide the following tracks:</p>
   <ul>
     <li><b>counts sequence contribution scores</b>: Projected sequence contribution toward total predicted
     accessibility counts. (bigWig)</li>
     <li><b>profile sequence contribution scores</b>: Projected sequence contribution toward predicted
     accessibility profile shape. (bigWig)</li>
   </ul>
+  <h3>Genomic instance tracks</h3>
   <p><b>Genomic instance tracks</b> identify accessibility-related TF motif instances discovered from ChromBPNet
-  contribution scores with TF-MoDISco and scanned with FiNeMo.</p>
+  contribution scores with TF-MoDISco and scanned with FiNeMo. We provide the following tracks:</p>
   <ul>
     <li><b>sequence motifs instances</b>: Browser-ready genomic instance calls of TF-MoDISco motifs in
     peak regions. (bigBed)</li>
   </ul>
-  <p><b>Selected region tracks</b> mark the peak regions used to generate model predictions and sequence contribution scores.</p>
+  <h3>Selected region tracks</h3>
+  <p><b>Selected region tracks</b> mark the peak regions used to generate model predictions and sequence contribution scores. 
+  We provide the following tracks:</p>
   <ul>
     <li><b>selected regions for predicted signal and sequence contribution scores</b>: Genomic
     peak regions used to calculate model predictions and contribution scores. (bed, bigBed)</li>
@@ -89,8 +95,7 @@
   training, interpretation, browser-ready packaging, and trackhub integration were developed as part of ENCODE deep
   learning model efforts, including work from the Kundaje lab and ENCODE Data Analysis Center collaborators.</p>
   <h2>References</h2>
-  <p>Avsec Z, Weilert M, Shrikumar A, Krueger S, Alexandari A, Dalal K, Fropf R, McAnany C, Gagneur J,
-  Kundaje A et al. Base-resolution models of transcription-factor binding reveal soft motif syntax. Nat Genet.
+  <p>Avsec Z et al. <a href="https://doi.org/10.1038/s41588-021-00782-6">Base-resolution models of transcription-factor binding reveal soft motif syntax. Nat Genet.
   2021;53:354-366.</p>
   <p>Pampari A et al. <a href="https://doi.org/10.1101/2024.12.25.630221">ChromBPNet: bias factorized,
   base-resolution deep learning models of chromatin accessibility reveal cis-regulatory sequence syntax,
