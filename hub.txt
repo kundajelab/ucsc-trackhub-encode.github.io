@@ -3,3 +3,4 @@ shortLabel ENCODE Deep Learning Models
 longLabel A collection of Deep Learning Model predictions, contribution scores, and motif instances from ENCODE: BPNet, ChromBPNet, ProCapNet, ReporterNet.
 genomesFile genomes.txt
 email akundaje@stanford.edu
+descriptionUrl description.html
