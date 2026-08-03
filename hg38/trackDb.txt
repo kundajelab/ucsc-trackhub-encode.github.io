@@ -1,35 +1,35 @@
 track EncodeChromBPNetTrack
 superTrack on show
 priority 1
-shortLabel ENCODE ChromBPNet (DNase/ATAC)
-longLabel ENCODE ChromBPNet models trained on DNase-seq/ATAC-seq: Model predictions, contribution scores, motif instance tracks.
-html docs/encode_deep_learning_models.html
+shortLabel ENCODE GRAMMAR: ChromBPNet (DNase/ATAC)
+longLabel ENCODE GRAMMAR: ChromBPNet models trained on DNase-seq/ATAC-seq: Model predictions, contribution scores, motif instance tracks.
+html docs/encode_grammar.html
 
 include trackDb.chrombpnet.txt
 
 track EncodeBPNetTrack
 superTrack on show
 priority 2
-shortLabel ENCODE BPNet (TF ChIP)
-longLabel ENCODE BPNet models trained on TF ChIP-seq: Model predictions, contribution scores, motif instance tracks.
-html docs/encode_deep_learning_models.html
+shortLabel ENCODE GRAMMAR: BPNet (TF ChIP)
+longLabel ENCODE GRAMMAR: BPNet models trained on TF ChIP-seq: Model predictions, contribution scores, motif instance tracks.
+html docs/encode_grammar.html
 
 include trackDb.bpnet.txt
 
 track EncodeProCapNetTrack
 superTrack on show
 priority 3
-shortLabel ENCODE ProCapNet (PRO-cap)
-longLabel ENCODE ProCapNet models trained on PRO-cap: Model predictions, contribution scores, motif instance tracks.
-html docs/encode_deep_learning_models.html
+shortLabel ENCODE GRAMMAR: ProCapNet (PRO-cap)
+longLabel ENCODE GRAMMAR: ProCapNet models trained on PRO-cap: Model predictions, contribution scores, motif instance tracks.
+html docs/encode_grammar.html
 
 include trackDb.procapnet.txt
 
 track EncodeReporterNetTrack
 superTrack on show
 priority 4
-shortLabel ENCODE ReporterNet (MPRA)
-longLabel ENCODE ReporterNet models: Model predictions, contribution scores, motif instance tracks.
-html docs/encode_deep_learning_models.html
+shortLabel ENCODE GRAMMAR: ReporterNet (MPRA)
+longLabel ENCODE GRAMMAR: ReporterNet models: Model predictions, contribution scores, motif instance tracks.
+html docs/encode_grammar.html
 
 include trackDb.reporternet.txt

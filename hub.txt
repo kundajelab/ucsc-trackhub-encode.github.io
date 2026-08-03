@@ -1,4 +1,4 @@
-hub EncodeBPNetHub
+hub EncodeGrammarHub
 shortLabel ENCODE GRAMMAR
 longLabel ENCODE GRAMMAR: A collection of model predictions, contribution scores, and motif instances from deep learning models trained on ENCODE (BPNet, ChromBPNet, ProCapNet, ReporterNet).
 genomesFile genomes.txt
