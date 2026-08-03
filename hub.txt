@@ -1,6 +1,6 @@
 hub EncodeBPNetHub
-shortLabel ENCODE Deep Learning Models
-longLabel A collection of Deep Learning Model predictions, contribution scores, and motif instances from ENCODE: BPNet, ChromBPNet, ProCapNet, ReporterNet.
+shortLabel ENCODE GRAMMAR
+longLabel ENCODE GRAMMAR: A collection of model predictions, contribution scores, and motif instances from deep learning models trained on ENCODE (BPNet, ChromBPNet, ProCapNet, ReporterNet).
 genomesFile genomes.txt
 email akundaje@stanford.edu
 descriptionUrl description.html
