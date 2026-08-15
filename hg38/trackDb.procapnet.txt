@@ -305,7 +305,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF496KXS/@@download/ENCFF496KXS.bigWig
 shortLabel A673 Counts
-longLabel ProCapNet sequence contribution scores counts Counts A673 PRO-cap ENCSR046BCI ENCFF496KXS
+longLabel ProCapNet contribution scores counts Counts A673 PRO-cap ENCSR046BCI ENCFF496KXS
 priority 25
 visibility full
 color 0,90,180
@@ -318,7 +318,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF773CZW/@@download/ENCFF773CZW.bigWig
 shortLabel Caco-2 Counts
-longLabel ProCapNet sequence contribution scores counts Counts Caco-2 PRO-cap ENCSR100LIJ ENCFF773CZW
+longLabel ProCapNet contribution scores counts Counts Caco-2 PRO-cap ENCSR100LIJ ENCFF773CZW
 priority 26
 visibility full
 color 0,90,180
@@ -331,7 +331,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF255ZJK/@@download/ENCFF255ZJK.bigWig
 shortLabel Calu3 Counts
-longLabel ProCapNet sequence contribution scores counts Counts Calu3 PRO-cap ENCSR935RNW ENCFF255ZJK
+longLabel ProCapNet contribution scores counts Counts Calu3 PRO-cap ENCSR935RNW ENCFF255ZJK
 priority 27
 visibility full
 color 0,90,180
@@ -344,7 +344,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF399XSL/@@download/ENCFF399XSL.bigWig
 shortLabel K562 Counts
-longLabel ProCapNet sequence contribution scores counts Counts K562 PRO-cap ENCSR261KBX ENCFF399XSL
+longLabel ProCapNet contribution scores counts Counts K562 PRO-cap ENCSR261KBX ENCFF399XSL
 priority 28
 visibility full
 color 0,90,180
@@ -357,7 +357,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF898JHY/@@download/ENCFF898JHY.bigWig
 shortLabel MCF-10A Counts
-longLabel ProCapNet sequence contribution scores counts Counts MCF-10A PRO-cap ENCSR799DGV ENCFF898JHY
+longLabel ProCapNet contribution scores counts Counts MCF-10A PRO-cap ENCSR799DGV ENCFF898JHY
 priority 29
 visibility full
 color 0,90,180
@@ -370,7 +370,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF142HSZ/@@download/ENCFF142HSZ.bigWig
 shortLabel endothelial-cell-
-longLabel ProCapNet sequence contribution scores counts Counts endothelial-cell-of-umbilical-vein PRO-cap ENCSR098LLB ENCFF142HSZ
+longLabel ProCapNet contribution scores counts Counts endothelial-cell-of-umbilical-vein PRO-cap ENCSR098LLB ENCFF142HSZ
 priority 30
 visibility full
 color 0,90,180
@@ -383,7 +383,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF395XCX/@@download/ENCFF395XCX.bigWig
 shortLabel A673 Profile
-longLabel ProCapNet sequence contribution scores profile Profile A673 PRO-cap ENCSR046BCI ENCFF395XCX
+longLabel ProCapNet contribution scores profile Profile A673 PRO-cap ENCSR046BCI ENCFF395XCX
 priority 31
 visibility full
 color 0,90,180
@@ -396,7 +396,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF566GOV/@@download/ENCFF566GOV.bigWig
 shortLabel Caco-2 Profile
-longLabel ProCapNet sequence contribution scores profile Profile Caco-2 PRO-cap ENCSR100LIJ ENCFF566GOV
+longLabel ProCapNet contribution scores profile Profile Caco-2 PRO-cap ENCSR100LIJ ENCFF566GOV
 priority 32
 visibility full
 color 0,90,180
@@ -409,7 +409,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF369BLK/@@download/ENCFF369BLK.bigWig
 shortLabel Calu3 Profile
-longLabel ProCapNet sequence contribution scores profile Profile Calu3 PRO-cap ENCSR935RNW ENCFF369BLK
+longLabel ProCapNet contribution scores profile Profile Calu3 PRO-cap ENCSR935RNW ENCFF369BLK
 priority 33
 visibility full
 color 0,90,180
@@ -422,7 +422,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF105JTF/@@download/ENCFF105JTF.bigWig
 shortLabel K562 Profile
-longLabel ProCapNet sequence contribution scores profile Profile K562 PRO-cap ENCSR261KBX ENCFF105JTF
+longLabel ProCapNet contribution scores profile Profile K562 PRO-cap ENCSR261KBX ENCFF105JTF
 priority 34
 visibility full
 color 0,90,180
@@ -435,7 +435,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF117LHD/@@download/ENCFF117LHD.bigWig
 shortLabel MCF-10A Profile
-longLabel ProCapNet sequence contribution scores profile Profile MCF-10A PRO-cap ENCSR799DGV ENCFF117LHD
+longLabel ProCapNet contribution scores profile Profile MCF-10A PRO-cap ENCSR799DGV ENCFF117LHD
 priority 35
 visibility full
 color 0,90,180
@@ -448,7 +448,7 @@ parent ProCapNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF090ECF/@@download/ENCFF090ECF.bigWig
 shortLabel endothelial-cell-
-longLabel ProCapNet sequence contribution scores profile Profile endothelial-cell-of-umbilical-vein PRO-cap ENCSR098LLB ENCFF090ECF
+longLabel ProCapNet contribution scores profile Profile endothelial-cell-of-umbilical-vein PRO-cap ENCSR098LLB ENCFF090ECF
 priority 36
 visibility full
 color 0,90,180
@@ -458,10 +458,10 @@ logo on
 
 track ProCapNet_faceted_ENCFF890XJG
 parent ProCapNet_faceted off
-type bigBed 9
+type bigBed 9 +
 bigDataUrl https://www.encodeproject.org/files/ENCFF890XJG/@@download/ENCFF890XJG.bigBed
 shortLabel A673
-longLabel ProCapNet sequence motifs instances A673 PRO-cap ENCSR046BCI ENCFF890XJG
+longLabel ProCapNet motif instances A673 PRO-cap ENCSR046BCI ENCFF890XJG
 priority 37
 visibility pack
 color 180,60,0
@@ -472,10 +472,10 @@ defaultLabelFields name
 
 track ProCapNet_faceted_ENCFF214LNU
 parent ProCapNet_faceted off
-type bigBed 9
+type bigBed 9 +
 bigDataUrl https://www.encodeproject.org/files/ENCFF214LNU/@@download/ENCFF214LNU.bigBed
 shortLabel Caco-2
-longLabel ProCapNet sequence motifs instances Caco-2 PRO-cap ENCSR100LIJ ENCFF214LNU
+longLabel ProCapNet motif instances Caco-2 PRO-cap ENCSR100LIJ ENCFF214LNU
 priority 38
 visibility pack
 color 180,60,0
@@ -486,10 +486,10 @@ defaultLabelFields name
 
 track ProCapNet_faceted_ENCFF351WJS
 parent ProCapNet_faceted off
-type bigBed 9
+type bigBed 9 +
 bigDataUrl https://www.encodeproject.org/files/ENCFF351WJS/@@download/ENCFF351WJS.bigBed
 shortLabel Calu3
-longLabel ProCapNet sequence motifs instances Calu3 PRO-cap ENCSR935RNW ENCFF351WJS
+longLabel ProCapNet motif instances Calu3 PRO-cap ENCSR935RNW ENCFF351WJS
 priority 39
 visibility pack
 color 180,60,0
@@ -500,10 +500,10 @@ defaultLabelFields name
 
 track ProCapNet_faceted_ENCFF624OCH
 parent ProCapNet_faceted off
-type bigBed 9
+type bigBed 9 +
 bigDataUrl https://www.encodeproject.org/files/ENCFF624OCH/@@download/ENCFF624OCH.bigBed
 shortLabel K562
-longLabel ProCapNet sequence motifs instances K562 PRO-cap ENCSR261KBX ENCFF624OCH
+longLabel ProCapNet motif instances K562 PRO-cap ENCSR261KBX ENCFF624OCH
 priority 40
 visibility pack
 color 180,60,0
@@ -514,10 +514,10 @@ defaultLabelFields name
 
 track ProCapNet_faceted_ENCFF264QWB
 parent ProCapNet_faceted off
-type bigBed 9
+type bigBed 9 +
 bigDataUrl https://www.encodeproject.org/files/ENCFF264QWB/@@download/ENCFF264QWB.bigBed
 shortLabel MCF-10A
-longLabel ProCapNet sequence motifs instances MCF-10A PRO-cap ENCSR799DGV ENCFF264QWB
+longLabel ProCapNet motif instances MCF-10A PRO-cap ENCSR799DGV ENCFF264QWB
 priority 41
 visibility pack
 color 180,60,0
@@ -528,10 +528,10 @@ defaultLabelFields name
 
 track ProCapNet_faceted_ENCFF479KIM
 parent ProCapNet_faceted off
-type bigBed 9
+type bigBed 9 +
 bigDataUrl https://www.encodeproject.org/files/ENCFF479KIM/@@download/ENCFF479KIM.bigBed
 shortLabel endothelial-cell-
-longLabel ProCapNet sequence motifs instances endothelial-cell-of-umbilical-vein PRO-cap ENCSR098LLB ENCFF479KIM
+longLabel ProCapNet motif instances endothelial-cell-of-umbilical-vein PRO-cap ENCSR098LLB ENCFF479KIM
 priority 42
 visibility pack
 color 180,60,0

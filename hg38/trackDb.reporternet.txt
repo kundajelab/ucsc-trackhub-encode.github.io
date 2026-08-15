@@ -17,7 +17,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF619TSO/@@download/ENCFF619TSO.bigWig
 shortLabel HepG2
-longLabel ReporterNet predicted signal profile HepG2 MPRA ENCSR847SNQ,ENCSR979TSK,ENCSR736XUK,ENCSR045VPN,ENCSR222QJT,ENCSR712VZT,ENCSR843APF,ENCSR554UKK,ENCSR833BYO ENCFF619TSO
+longLabel ReporterNet predicted signal profile HepG2 MPRA ENCSR847SNQ + 8 more experiments ENCFF619TSO
 priority 1
 visibility full
 color 0,90,180
@@ -53,7 +53,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF239DQI/@@download/ENCFF239DQI.bigWig
 shortLabel K562
-longLabel ReporterNet predicted signal profile K562 MPRA ENCSR857JFG,ENCSR653LWA,ENCSR697PNZ,ENCSR997GVD,ENCSR753ZRI,ENCSR135MRI,ENCSR003TJR,ENCSR971PLA ENCFF239DQI
+longLabel ReporterNet predicted signal profile K562 MPRA ENCSR857JFG + 7 more experiments ENCFF239DQI
 priority 4
 visibility full
 color 0,90,180
@@ -89,7 +89,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF386VIF/@@download/ENCFF386VIF.bigWig
 shortLabel SK-N-SH
-longLabel ReporterNet predicted signal profile SK-N-SH MPRA ENCSR623DJZ,ENCSR833GXJ,ENCSR742AAP,ENCSR563TTU,ENCSR505LQA,ENCSR574GPT,ENCSR562GGR,ENCSR386XIB,ENCSR579QGV ENCFF386VIF
+longLabel ReporterNet predicted signal profile SK-N-SH MPRA ENCSR623DJZ + 8 more experiments ENCFF386VIF
 priority 7
 visibility full
 color 0,90,180
@@ -113,7 +113,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF546KRR/@@download/ENCFF546KRR.bigWig
 shortLabel HepG2 Counts
-longLabel ReporterNet sequence contribution scores counts Counts HepG2 MPRA ENCSR847SNQ,ENCSR979TSK,ENCSR736XUK,ENCSR045VPN,ENCSR222QJT,ENCSR712VZT,ENCSR843APF,ENCSR554UKK,ENCSR833BYO ENCFF546KRR
+longLabel ReporterNet contribution scores counts Counts HepG2 MPRA ENCSR847SNQ + 8 more experiments ENCFF546KRR
 priority 9
 visibility full
 color 0,90,180
@@ -126,7 +126,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF976IMO/@@download/ENCFF976IMO.bigWig
 shortLabel HepG2 Counts
-longLabel ReporterNet sequence contribution scores counts Counts HepG2 lentiMPRA ENCSR022GQD ENCFF976IMO
+longLabel ReporterNet contribution scores counts Counts HepG2 lentiMPRA ENCSR022GQD ENCFF976IMO
 priority 10
 visibility full
 color 0,90,180
@@ -139,7 +139,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF072FQR/@@download/ENCFF072FQR.bigWig
 shortLabel K562 Counts
-longLabel ReporterNet sequence contribution scores counts Counts K562 ATAC-STARR ENCSR312UQM ENCFF072FQR
+longLabel ReporterNet contribution scores counts Counts K562 ATAC-STARR ENCSR312UQM ENCFF072FQR
 priority 11
 visibility full
 color 0,90,180
@@ -152,7 +152,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF807PAN/@@download/ENCFF807PAN.bigWig
 shortLabel K562 Counts
-longLabel ReporterNet sequence contribution scores counts Counts K562 MPRA ENCSR857JFG,ENCSR653LWA,ENCSR697PNZ,ENCSR997GVD,ENCSR753ZRI,ENCSR135MRI,ENCSR003TJR,ENCSR971PLA ENCFF807PAN
+longLabel ReporterNet contribution scores counts Counts K562 MPRA ENCSR857JFG + 7 more experiments ENCFF807PAN
 priority 12
 visibility full
 color 0,90,180
@@ -165,7 +165,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF298FVE/@@download/ENCFF298FVE.bigWig
 shortLabel K562 Counts
-longLabel ReporterNet sequence contribution scores counts Counts K562 WG-STARR ENCSR661FOW ENCFF298FVE
+longLabel ReporterNet contribution scores counts Counts K562 WG-STARR ENCSR661FOW ENCFF298FVE
 priority 13
 visibility full
 color 0,90,180
@@ -178,7 +178,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF681MRI/@@download/ENCFF681MRI.bigWig
 shortLabel K562 Counts
-longLabel ReporterNet sequence contribution scores counts Counts K562 lentiMPRA ENCSR382BVV ENCFF681MRI
+longLabel ReporterNet contribution scores counts Counts K562 lentiMPRA ENCSR382BVV ENCFF681MRI
 priority 14
 visibility full
 color 0,90,180
@@ -191,7 +191,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF520KLU/@@download/ENCFF520KLU.bigWig
 shortLabel SK-N-SH Counts
-longLabel ReporterNet sequence contribution scores counts Counts SK-N-SH MPRA ENCSR623DJZ,ENCSR833GXJ,ENCSR742AAP,ENCSR563TTU,ENCSR505LQA,ENCSR574GPT,ENCSR562GGR,ENCSR386XIB,ENCSR579QGV ENCFF520KLU
+longLabel ReporterNet contribution scores counts Counts SK-N-SH MPRA ENCSR623DJZ + 8 more experiments ENCFF520KLU
 priority 15
 visibility full
 color 0,90,180
@@ -204,7 +204,7 @@ parent ReporterNet_faceted off
 type bigWig
 bigDataUrl https://www.encodeproject.org/files/ENCFF943ZCT/@@download/ENCFF943ZCT.bigWig
 shortLabel WTC11 Counts
-longLabel ReporterNet sequence contribution scores counts Counts WTC11 lentiMPRA ENCSR244FWB ENCFF943ZCT
+longLabel ReporterNet contribution scores counts Counts WTC11 lentiMPRA ENCSR244FWB ENCFF943ZCT
 priority 16
 visibility full
 color 0,90,180
