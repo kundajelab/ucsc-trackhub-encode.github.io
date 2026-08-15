@@ -1,15 +1,12 @@
 track_key	file_accession	experiment	model_accession	model	track_type	format	assay	target	biosample	tissue	organ	system	strand	score_type	qc_flag
-ENCFF662SHP	ENCFF662SHP	ENCSR261KBX	ENCSR740IPL	ProCapNet	observed signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	minus	none	passed
-ENCFF798GNW	ENCFF798GNW	ENCSR261KBX	ENCSR740IPL	ProCapNet	observed signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	plus	none	passed
-ENCFF977ZRF	ENCFF977ZRF	ENCSR261KBX	ENCSR740IPL	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	minus	none	passed
-ENCFF810TSX	ENCFF810TSX	ENCSR261KBX	ENCSR740IPL	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	plus	none	passed
-ENCFF399XSL	ENCFF399XSL	ENCSR261KBX	ENCSR740IPL	ProCapNet	sequence contribution scores counts	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	none	counts	passed
 ENCFF248NRG	ENCFF248NRG	ENCSR046BCI	ENCSR072YCM	ProCapNet	observed signal profile	bigWig	PRO-cap	none	A673	cell-line	cell-line	cell-line	minus	none	passed
 ENCFF484JMU	ENCFF484JMU	ENCSR046BCI	ENCSR072YCM	ProCapNet	observed signal profile	bigWig	PRO-cap	none	A673	cell-line	cell-line	cell-line	plus	none	passed
 ENCFF674WYH	ENCFF674WYH	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	observed signal profile	bigWig	PRO-cap	none	Caco-2	cell-line	cell-line	cell-line	minus	none	passed
 ENCFF290ILU	ENCFF290ILU	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	observed signal profile	bigWig	PRO-cap	none	Caco-2	cell-line	cell-line	cell-line	plus	none	passed
 ENCFF694ACJ	ENCFF694ACJ	ENCSR935RNW	ENCSR797DEF	ProCapNet	observed signal profile	bigWig	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	minus	none	passed
 ENCFF726ZFO	ENCFF726ZFO	ENCSR935RNW	ENCSR797DEF	ProCapNet	observed signal profile	bigWig	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF662SHP	ENCFF662SHP	ENCSR261KBX	ENCSR740IPL	ProCapNet	observed signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF798GNW	ENCFF798GNW	ENCSR261KBX	ENCSR740IPL	ProCapNet	observed signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	plus	none	passed
 ENCFF466PYB	ENCFF466PYB	ENCSR799DGV	ENCSR860TYZ	ProCapNet	observed signal profile	bigWig	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	minus	none	passed
 ENCFF460DXE	ENCFF460DXE	ENCSR799DGV	ENCSR860TYZ	ProCapNet	observed signal profile	bigWig	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	plus	none	passed
 ENCFF932EJP	ENCFF932EJP	ENCSR098LLB	ENCSR801ECP	ProCapNet	observed signal profile	bigWig	PRO-cap	none	endothelial-cell-of-umbilical-vein	endothelial	blood-vessel	circulatory-system	minus	none	passed
@@ -20,6 +17,8 @@ ENCFF512NRZ	ENCFF512NRZ	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	predicted signal profi
 ENCFF781NNR	ENCFF781NNR	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	Caco-2	cell-line	cell-line	cell-line	plus	none	passed
 ENCFF726MZN	ENCFF726MZN	ENCSR935RNW	ENCSR797DEF	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	minus	none	passed
 ENCFF297DYW	ENCFF297DYW	ENCSR935RNW	ENCSR797DEF	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	plus	none	passed
+ENCFF977ZRF	ENCFF977ZRF	ENCSR261KBX	ENCSR740IPL	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	minus	none	passed
+ENCFF810TSX	ENCFF810TSX	ENCSR261KBX	ENCSR740IPL	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	plus	none	passed
 ENCFF751HYG	ENCFF751HYG	ENCSR799DGV	ENCSR860TYZ	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	minus	none	passed
 ENCFF413SKO	ENCFF413SKO	ENCSR799DGV	ENCSR860TYZ	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	plus	none	passed
 ENCFF130FIR	ENCFF130FIR	ENCSR098LLB	ENCSR801ECP	ProCapNet	predicted signal profile	bigWig	PRO-cap	none	endothelial-cell-of-umbilical-vein	endothelial	blood-vessel	circulatory-system	minus	none	passed
@@ -27,6 +26,7 @@ ENCFF522DPN	ENCFF522DPN	ENCSR098LLB	ENCSR801ECP	ProCapNet	predicted signal profi
 ENCFF496KXS	ENCFF496KXS	ENCSR046BCI	ENCSR072YCM	ProCapNet	sequence contribution scores counts	bigWig	PRO-cap	none	A673	cell-line	cell-line	cell-line	none	counts	passed
 ENCFF773CZW	ENCFF773CZW	ENCSR100LIJ	ENCSR182QNJ	ProCapNet	sequence contribution scores counts	bigWig	PRO-cap	none	Caco-2	cell-line	cell-line	cell-line	none	counts	passed
 ENCFF255ZJK	ENCFF255ZJK	ENCSR935RNW	ENCSR797DEF	ProCapNet	sequence contribution scores counts	bigWig	PRO-cap	none	Calu3	cell-line	cell-line	cell-line	none	counts	passed
+ENCFF399XSL	ENCFF399XSL	ENCSR261KBX	ENCSR740IPL	ProCapNet	sequence contribution scores counts	bigWig	PRO-cap	none	K562	cell-line	cell-line	cell-line	none	counts	passed
 ENCFF898JHY	ENCFF898JHY	ENCSR799DGV	ENCSR860TYZ	ProCapNet	sequence contribution scores counts	bigWig	PRO-cap	none	MCF-10A	cell-line	cell-line	cell-line	none	counts	passed
 ENCFF142HSZ	ENCFF142HSZ	ENCSR098LLB	ENCSR801ECP	ProCapNet	sequence contribution scores counts	bigWig	PRO-cap	none	endothelial-cell-of-umbilical-vein	endothelial	blood-vessel	circulatory-system	none	counts	passed
 ENCFF395XCX	ENCFF395XCX	ENCSR046BCI	ENCSR072YCM	ProCapNet	sequence contribution scores profile	bigWig	PRO-cap	none	A673	cell-line	cell-line	cell-line	none	profile	passed

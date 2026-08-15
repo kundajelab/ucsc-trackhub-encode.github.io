@@ -1,17 +1,17 @@
 track_key	file_accession	experiment	model_accession	model	track_type	format	assay	target	biosample	tissue	organ	system	strand	score_type	qc_flag
-ENCFF506COI	ENCFF506COI	ENCSR312UQM	ENCSR204SXE	ReporterNet	predicted signal profile	bigWig	ATAC-STARR	none	K562	cell-line	cell-line	cell-line	none	none	passed
-ENCFF072FQR	ENCFF072FQR	ENCSR312UQM	ENCSR204SXE	ReporterNet	sequence contribution scores counts	bigWig	ATAC-STARR	none	K562	cell-line	cell-line	cell-line	none	counts	passed
-ENCFF539IBG	ENCFF539IBG	ENCSR382BVV	ENCSR149OFN	ReporterNet	predicted signal profile	bigWig	lentiMPRA	none	K562	cell-line	cell-line	cell-line	none	none	passed
-ENCFF681MRI	ENCFF681MRI	ENCSR382BVV	ENCSR149OFN	ReporterNet	sequence contribution scores counts	bigWig	lentiMPRA	none	K562	cell-line	cell-line	cell-line	none	counts	passed
-ENCFF239DQI	ENCFF239DQI	ENCSR857JFG,ENCSR653LWA,ENCSR697PNZ,ENCSR997GVD,ENCSR753ZRI,ENCSR135MRI,ENCSR003TJR,ENCSR971PLA	ENCSR701UIV	ReporterNet	predicted signal profile	bigWig	MPRA	none	K562	cell-line	cell-line	cell-line	none	none	passed
-ENCFF807PAN	ENCFF807PAN	ENCSR857JFG,ENCSR653LWA,ENCSR697PNZ,ENCSR997GVD,ENCSR753ZRI,ENCSR135MRI,ENCSR003TJR,ENCSR971PLA	ENCSR701UIV	ReporterNet	sequence contribution scores counts	bigWig	MPRA	none	K562	cell-line	cell-line	cell-line	none	counts	passed
-ENCFF782ARG	ENCFF782ARG	ENCSR661FOW	ENCSR375XWZ	ReporterNet	predicted signal profile	bigWig	WG-STARR	none	K562	cell-line	cell-line	cell-line	none	none	passed
-ENCFF298FVE	ENCFF298FVE	ENCSR661FOW	ENCSR375XWZ	ReporterNet	sequence contribution scores counts	bigWig	WG-STARR	none	K562	cell-line	cell-line	cell-line	none	counts	passed
-ENCFF421BAN	ENCFF421BAN	ENCSR022GQD	ENCSR290IZP	ReporterNet	predicted signal profile	bigWig	lentiMPRA	none	HepG2	cell-line	cell-line	cell-line	none	none	passed
-ENCFF976IMO	ENCFF976IMO	ENCSR022GQD	ENCSR290IZP	ReporterNet	sequence contribution scores counts	bigWig	lentiMPRA	none	HepG2	cell-line	cell-line	cell-line	none	counts	passed
 ENCFF619TSO	ENCFF619TSO	ENCSR847SNQ,ENCSR979TSK,ENCSR736XUK,ENCSR045VPN,ENCSR222QJT,ENCSR712VZT,ENCSR843APF,ENCSR554UKK,ENCSR833BYO	ENCSR038JJC	ReporterNet	predicted signal profile	bigWig	MPRA	none	HepG2	cell-line	cell-line	cell-line	none	none	passed
-ENCFF546KRR	ENCFF546KRR	ENCSR847SNQ,ENCSR979TSK,ENCSR736XUK,ENCSR045VPN,ENCSR222QJT,ENCSR712VZT,ENCSR843APF,ENCSR554UKK,ENCSR833BYO	ENCSR038JJC	ReporterNet	sequence contribution scores counts	bigWig	MPRA	none	HepG2	cell-line	cell-line	cell-line	none	counts	passed
+ENCFF421BAN	ENCFF421BAN	ENCSR022GQD	ENCSR290IZP	ReporterNet	predicted signal profile	bigWig	lentiMPRA	none	HepG2	cell-line	cell-line	cell-line	none	none	passed
+ENCFF506COI	ENCFF506COI	ENCSR312UQM	ENCSR204SXE	ReporterNet	predicted signal profile	bigWig	ATAC-STARR	none	K562	cell-line	cell-line	cell-line	none	none	passed
+ENCFF239DQI	ENCFF239DQI	ENCSR857JFG,ENCSR653LWA,ENCSR697PNZ,ENCSR997GVD,ENCSR753ZRI,ENCSR135MRI,ENCSR003TJR,ENCSR971PLA	ENCSR701UIV	ReporterNet	predicted signal profile	bigWig	MPRA	none	K562	cell-line	cell-line	cell-line	none	none	passed
+ENCFF782ARG	ENCFF782ARG	ENCSR661FOW	ENCSR375XWZ	ReporterNet	predicted signal profile	bigWig	WG-STARR	none	K562	cell-line	cell-line	cell-line	none	none	passed
+ENCFF539IBG	ENCFF539IBG	ENCSR382BVV	ENCSR149OFN	ReporterNet	predicted signal profile	bigWig	lentiMPRA	none	K562	cell-line	cell-line	cell-line	none	none	passed
 ENCFF386VIF	ENCFF386VIF	ENCSR623DJZ,ENCSR833GXJ,ENCSR742AAP,ENCSR563TTU,ENCSR505LQA,ENCSR574GPT,ENCSR562GGR,ENCSR386XIB,ENCSR579QGV	ENCSR395XKK	ReporterNet	predicted signal profile	bigWig	MPRA	none	SK-N-SH	cell-line	cell-line	cell-line	none	none	passed
 ENCFF418JAT	ENCFF418JAT	ENCSR244FWB	ENCSR095JXI	ReporterNet	predicted signal profile	bigWig	lentiMPRA	none	WTC11	cell-line	cell-line	cell-line	none	none	passed
+ENCFF546KRR	ENCFF546KRR	ENCSR847SNQ,ENCSR979TSK,ENCSR736XUK,ENCSR045VPN,ENCSR222QJT,ENCSR712VZT,ENCSR843APF,ENCSR554UKK,ENCSR833BYO	ENCSR038JJC	ReporterNet	sequence contribution scores counts	bigWig	MPRA	none	HepG2	cell-line	cell-line	cell-line	none	counts	passed
+ENCFF976IMO	ENCFF976IMO	ENCSR022GQD	ENCSR290IZP	ReporterNet	sequence contribution scores counts	bigWig	lentiMPRA	none	HepG2	cell-line	cell-line	cell-line	none	counts	passed
+ENCFF072FQR	ENCFF072FQR	ENCSR312UQM	ENCSR204SXE	ReporterNet	sequence contribution scores counts	bigWig	ATAC-STARR	none	K562	cell-line	cell-line	cell-line	none	counts	passed
+ENCFF807PAN	ENCFF807PAN	ENCSR857JFG,ENCSR653LWA,ENCSR697PNZ,ENCSR997GVD,ENCSR753ZRI,ENCSR135MRI,ENCSR003TJR,ENCSR971PLA	ENCSR701UIV	ReporterNet	sequence contribution scores counts	bigWig	MPRA	none	K562	cell-line	cell-line	cell-line	none	counts	passed
+ENCFF298FVE	ENCFF298FVE	ENCSR661FOW	ENCSR375XWZ	ReporterNet	sequence contribution scores counts	bigWig	WG-STARR	none	K562	cell-line	cell-line	cell-line	none	counts	passed
+ENCFF681MRI	ENCFF681MRI	ENCSR382BVV	ENCSR149OFN	ReporterNet	sequence contribution scores counts	bigWig	lentiMPRA	none	K562	cell-line	cell-line	cell-line	none	counts	passed
 ENCFF520KLU	ENCFF520KLU	ENCSR623DJZ,ENCSR833GXJ,ENCSR742AAP,ENCSR563TTU,ENCSR505LQA,ENCSR574GPT,ENCSR562GGR,ENCSR386XIB,ENCSR579QGV	ENCSR395XKK	ReporterNet	sequence contribution scores counts	bigWig	MPRA	none	SK-N-SH	cell-line	cell-line	cell-line	none	counts	passed
 ENCFF943ZCT	ENCFF943ZCT	ENCSR244FWB	ENCSR095JXI	ReporterNet	sequence contribution scores counts	bigWig	lentiMPRA	none	WTC11	cell-line	cell-line	cell-line	none	counts	passed
